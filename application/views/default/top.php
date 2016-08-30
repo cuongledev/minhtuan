@@ -19,14 +19,33 @@
 				<div class="col-xs-6 col-md-4 logo col-xs-push-3 col-md-push-0 noPadding">
 					<a href="<?php echo base_url();?>"><img src="<?php if(isset($info['logo'])) echo base_url().$info['logo']; ?>" alt="" class="img-responsive center-block"></a>
 				</div>
+
 				<div class="hidden-xs hidden-sm col-md-4 search-form">
-					<form action="<?php echo base_url().'tim-kiem.htm'; ?>" method="GET" role="form">
+				  <form action="<?php echo base_url().'tim-kiem.htm'; ?>" method="GET" role="form">
+
 						<div class="form-group">
-							<input type="text" name="input_search" class="form-control" id="" placeholder="Tìm kiếm sản phẩm...">
-						</div>
-						<button type="submit" class="btn btn-primary search-submit"><i class="fa fa-search"></i></button>
-					</form>
-				</div><!-- /.search-form -->
+			                <div class='input-group date'>
+			                    <input type="text" name="input_search" class="form-control" id="input_search" placeholder="Tìm kiếm ...">
+			                    <span class="input-group-addon option_search">
+			                        <span class="">All</span>
+			                        <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+			                    </span>
+			                    <span class="input-group-addon icon_search">
+			                        <span class="fa fa-search"></span>
+			                    </span>
+			                </div>
+			                <div class="act_select_option">
+			                	<p><a class="">All</a></p>
+		                        <p><a class="">Product</a></p>
+		                        <p><a class="">News</a></p>
+			                </div>
+
+			            </div>
+
+				  </form>
+				</div>
+
+
 				<div class="col-xs-3 col-xs-push-3 col-md-4 col-md-push-0 text-right shopping-cart shopping_cart_lnc">
 					<a href="<?php echo base_url().'product/showCart'; ?>"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 					<?php 
