@@ -1,0 +1,209 @@
+.red{
+	color: white;
+    background-color: #d84a38;
+    border: 1px solid #d84a38;
+	
+}
+.red:hover{
+	    color: white;
+    background-color: #c13726!important;
+    border: 1px solid #c13726;
+}
+.green{
+	    color: white;
+    background-color: #35aa47;
+}
+.btn-del {
+    margin: 0 10px;
+}
+.alert-warning{
+	    background-color: #fcf8e3!important;
+    border-color: #faebcc!important;
+    color: #8a6d3b!important;
+}
+.content-wrapper{
+    background-color: #FFF;
+}
+.green-stripe {
+    border-left: 3px solid #35aa47;
+}
+
+.red-stripe {
+    border-left: 3px solid #d84a38;
+}
+.disabled{
+        pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: .65!important;
+    background-color: #d84a38!important;
+}
+.yellow{
+    color: white;
+    background-color: #ffb848;
+}
+.green:hover{
+     color: white;
+     background-color: #2b8b3a;
+}
+.yellow:hover{
+    color: white;
+    background-color: #ffa81f;
+}
+.table_td{
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.error{
+    color: #d84a38;
+    font-weight: 500;
+}
+/*.fixheight{
+    height: 400px;    
+}*/
+.bootstrap-tagsinput{
+    border-radius: 0px;
+    min-width: 401px;
+}
+.margin-top7{
+    margin-top: 7px;
+}
+.btn_lnc_fix{
+        padding: 3px 8px;
+    font-size: 11px;
+}
+.active_fix{
+    padding: 3px 8px;
+    font-size: 11px;
+}
+.panel_menu .panel-body{
+    height: 190px;
+    overflow-y: scroll;
+}
+#form_append_images{
+    padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/********************
+ METRONIC COMPONENTS 
+********************/
+/***
+General reset
+***/
+/* Set default body */
+body {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-size: 13px;
+  direction: ltr;
+}
+
+/*
+ Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't 
+ properly apply the media queries in Bootstrap's CSS. To address this, 
+ you can optionally include the following CSS and JavaScript to work around this problem until Microsoft issues a fix.
+*/
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+/*
+ Internet Explorer 10 doesn't differentiate device width from viewport width, 
+ and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, following CSS code applied 
+*/
+@-ms-viewport {
+  width: auto !important;
+}
+/* Custom scrollbars for webkit browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+  border-left: 1px solid #cecece;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cecece;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaaaaa;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+}
+
+/* Reset round corners */
+div,
+input,
+select,
+textarea,
+span,
+img,
+table,
+label,
+td,
+th,
+p,
+a,
+button,
+ul,
+code,
+pre,
+li {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.img-circle {
+  border-radius: 50% !important;
+}
+
+.img-rounded {
+  border-radius: 6px !important;
+}
+.sort_menu_config{
+          width: 40px;
+    margin-right: 10px;
+}
+#createColor .thumbnail img{
+  height: 50px;
+}

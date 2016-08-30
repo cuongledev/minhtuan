@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Prompt&subset=latin-ext,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=latin-ext,vietnamese);
+
+// Color
+$textColor: #1f1f1f;
+$mainColor: #0a2762;
+
+//Trasition 
+@mixin transitionDelay($time)
+	transition: all $time linear 0s
+
+a, a:hover
+	transitionDelay(500ms)
+	text-decoration: none;
+.navbar-brand
+	display: block;
+	height: auto!important;
+nav 
+	margin: 0!important;
+	height: auto!important;
+
+h1, h2, h3, h4, h5,
+	font-family: 'Roboto Condensed', sans-serif;
+
+.noPadding 
+	padding: 0;
+
+.responsive-navbar 
+	li 
+		a 
+			&:hover, &:focus, &:visited, &:active 
+				background: none;
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+	background: none;
+
+@keyframes toBottomFromTop
+	49% 
+		transform: translateY(100%);
+	50% 
+		opacity: 0;
+		transform: translateY(-100%);
+	51% 
+		opacity: 1;
+
+

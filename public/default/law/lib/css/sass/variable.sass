@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Noticia+Text:700&subset=latin,vietnamese,latin-ext);
+@import 'https://fonts.googleapis.com/css?family=Lobster&subset=latin-ext,vietnamese';
+
+// Color
+$textColor: #1f1f1f;
+$red: #ea2e0d;
+$grey: #7e7e7e;
+
+//Trasition 
+@mixin transitionDelay($time)
+	transition: all $time linear 0s
+
+a, a:hover
+	transitionDelay(500ms)
+	text-decoration: none;
+.navbar-brand
+	display: block;
+	height: auto!important;
+nav 
+	margin: 0!important;
+	height: auto!important;
+
+.noPadding 
+	padding: 0;
+
+.responsive-navbar 
+	li 
+		a 
+			&:hover, &:focus, &:visited, &:active 
+				background: none;
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+	background: none;
+
+@keyframes toBottomFromTop
+	49% 
+		transform: translateY(100%);
+	50% 
+		opacity: 0;
+		transform: translateY(-100%);
+	51% 
+		opacity: 1;
+
+

@@ -1,0 +1,222 @@
+@import 'variable.sass';
+@import 'mobile.sass';
+@import 'tablet.sass';
+@import 'desktop.sass';
+
+body 
+	font-family: 'Prompt', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $textColor;
+	width: 100%;
+	position: relative;
+
+.top-bar
+	background: $mainColor;
+	li 
+		display: inline-block;
+		color: #fff;
+		a 
+			color: #fff;
+			&:hover
+				background: #fff;
+				color: $mainColor;
+.main-navigation
+	.navbar 
+		border-bottom: 1px solid #ccc;
+			
+.responsive-navbar 
+	li 
+		a 
+			color: $textColor;
+
+.hero-slider-item
+	min-height: 400px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+.slider-wrapper
+	background: url(../images/bg.jpg) top left;
+	.slider-navigation
+		position: absolute;
+		top: 40%;
+		z-index: 10;
+		left: 0;
+		width: 100%;
+		a 
+			color: #fff;
+			background: rgba(255,255,255,.2);
+			font-size: 3em;
+			padding: 5px;
+	.owl-controls 
+		position: absolute;
+		bottom: 5px;
+		text-align: center;
+		width: 100%
+
+section 
+	padding: 50px 0;
+	.section-title
+		padding-bottom: 25px;	
+		margin-bottom: 35px;
+		display: block;
+		color: #252525;
+		position: relative;
+		&:before
+			bottom: -1px;
+			content: "";
+			height: 4px;
+			position: absolute;
+			width: 74px;
+			left: 0;
+			right: 0;
+			background: $mainColor;
+	.center-title
+		&:before 
+			margin: auto;
+
+	.block-featured-image
+		border: 2px solid #ccc;;
+		&:hover 
+			border-color: #ccc;
+
+	.side-view
+		color: $mainColor;
+		display: inline-block;
+		font-weight: 700;
+		font-size: 1.2em;
+		border: 1px solid $mainColor;
+		padding: 5px 15px;
+		&:hover 
+			background: $mainColor;
+			color: #fff;
+
+	.button-view
+		color: #fff;
+		background: $mainColor;
+		max-width: 250px;
+		padding: 10px 25px;
+		text-transform: uppercase;
+		display: block;
+		margin: 30px auto;
+		position: relative;
+		border: 1px solid transparent
+		&:before
+			content: "";
+			position: absolute;
+			width: 91%;
+			height: 80%;
+			border: 1px solid #fff;
+			top: 11%;
+			left: 4%;
+		&:hover 
+			border-color: $mainColor;
+			color: $mainColor;
+			background: #ccc;
+			&:before 
+				border-color: $mainColor;
+	.block-item-title
+		font-weight: 400;
+		font-size: 1.3em;
+		height: calc(1.3em*1*1.8);
+		overflow: hidden;
+		a 
+			color: #1c1c1c;
+			display: block;
+			&:hover 
+				color: $mainColor;
+
+.grid-block-item				
+	.block-item-title
+		height: calc(1.3em*1*1.8);
+
+.list-block-item
+	margin-bottom: 30px;
+	.list-block-wrapper
+		margin: 15px 0 0;
+		li 
+		a 
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			display: block;
+			color: #1c1c1c;
+			&:hover 
+				color: $mainColor;
+
+.gray-block
+	background: #f8f8f8;
+	.section-title
+		border-bottom: 1px solid rgba(216,216,216,.2);
+
+.white-block
+	background: #fff;
+	.section-title
+		border-bottom: 1px solid rgba(216,216,216,.2);
+.cta
+	background: url('../images/bg-section.jpg') top left no-repeat fixed / cover;
+	padding: 150px 0;
+	color: #fff;
+	font-size: 1.5em;
+	text-shadow: 0 2px 2px #222;
+	h3 
+		font-size: 1.8em;
+		text-transform: uppercase;
+	.cta-button
+		margin: 30px auto;
+		display: block;
+		max-width: 250px;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.3em;
+		background: $mainColor;
+		border: 3px solid #fff;
+		color: #fff;
+		box-shadow: none;
+		text-shadow: none;
+
+.footer 
+	background: #175d8d;
+	color: #fff;
+	padding: 50px 0;
+	font-size: 1.1em;
+	background: $mainColor;
+	h4 
+		font-weight: 700;
+		font-size: 1.3em;
+		margin-bottom: 25px;	
+	form 
+		margin-top: 20px;
+		.form-control
+			height: 40px;
+			font-size: 1.05em;
+			border-radius: 0;
+		button[type="submit"]	
+			height: 40px;
+			background: #bbb336;
+			color: #fff;
+			box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.4) inset;
+			border-radius: 4px;
+			border-color: #bbb336;
+			font-size: 1.05em;
+			text-transform: uppercase;
+			&:hover 
+				background: #e1ac4c;
+	.copyright
+		font-style: italic;
+		font-size: .8em;
+	.footer-col-wrapper 
+		.social
+			padding: 0;
+			li 
+				display: inline-block;
+		.nav 
+			padding: 0;
+			li 
+				a 
+					color: #fff;
+					padding-left: 0;
+					&:hover 
+						text-decoration: underline;
+						background: none;	
+

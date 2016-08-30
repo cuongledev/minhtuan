@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Travel</title>
+
+	<!-- Load CSS -->
+	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="lib/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="lib/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="lib/css/animate.css">
+	<link rel="stylesheet" href="lib/css/style.min.css">
+	<link rel="stylesheet" href="lib/css/custom.css">
+	
+</head>
+<body>
+
+	<header class="header col-xs-12 noPadding" id="header">
+		<div class="top-header col-xs-12 noPadding">
+			<div class="container">
+				<span class="pull-left"><i class="fa fa-phone"></i> Bạn muốn tư vấn? Gọi ngay cho chúng tôi: 0128-223-6969</span>
+			</div>
+		</div>
+		<div class="main-navigation col-xs-12 noPadding">
+			<nav class="navbar" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".responsive-navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="lib/images/logo.png" alt="" class="img-responsive"></a>
+					</div>
+			
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse responsive-navbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#">Trang chủ</a></li>
+							<li><a href="#">Giới thiệu</a></li>
+							<li><a href="#">Khách sạn</a></li>
+							<li><a href="#">Gói Tour</a></li>
+							<li><a href="#">Thuê xe</a></li>
+							<li><a href="#">Tin tức</a></li>
+							<li><a href="#">Liên hệ</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main col-xs-12 noPadding" id="main">
+		<div class="main-filter col-xs-12 noPadding">
+			<div class="bg-slider col-xs-12 noPadding">
+				<div class="bg-item" style="background-image: url('lib/images/slider01.jpg')"></div>
+				<div class="bg-item" style="background-image: url('lib/images/slider02.jpg')"></div>
+			</div>
+			<div class="filer col-xs-12 noPadding">
+				<div class="container">
+					<div role="tabpanel">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">Khách sạn</a>
+							</li>
+							<li role="presentation">
+								<a href="#package" aria-controls="package" role="tab" data-toggle="tab">Gói Tour</a>
+							</li>
+						</ul>
+					
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="hotel">
+								<form action="" method="POST" role="form" class="col-xs-12 noPadding">
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group">
+											<input type="text" class="form-control" id="" placeholder="Input field">
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Thành phố </option>
+												<option value="">Hà Nội, Việt Nam</option>
+												<option value="">Bangkok, Thái Lan</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Hình thức</option>
+												<option value="">Trăng mật</option>
+												<option value="">Nghỉ dưỡng</option>
+												<option value="">Gia đình</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Giá thấp nhất</option>
+												<option value="">100 $</option>
+												<option value="">200 $</option>
+												<option value="">300 $</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Giá cao nhất</option>
+												<option value="">100 $</option>
+												<option value="">200 $</option>
+												<option value="">300 $</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Khuyến mại</option>
+												<option value="">5%</option>
+												<option value="">10%</option>
+												<option value="">15%</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<button type="submit" class="btn btn-primary">Tìm khách sạn</button>
+									</div>
+								</form>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="package">
+								<form action="" method="POST" role="form" class="col-xs-12 noPadding">
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group">
+											<input type="text" class="form-control" id="" placeholder="Tên gói Tour">
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Thành phố </option>
+												<option value="">Hà Nội, Việt Nam</option>
+												<option value="">Bangkok, Thái Lan</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Hình thức</option>
+												<option value="">Trăng mật</option>
+												<option value="">Nghỉ dưỡng</option>
+												<option value="">Gia đình</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Giá thấp nhất</option>
+												<option value="">100 $</option>
+												<option value="">200 $</option>
+												<option value="">300 $</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Giá cao nhất</option>
+												<option value="">100 $</option>
+												<option value="">200 $</option>
+												<option value="">300 $</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<div class="form-group select-box">
+											<select name="" id="input" class="form-control" required="required">
+												<option value="">Số người</option>
+												<option value="">2 người</option>
+												<option value="">3 người</option>
+												<option value="">4 người</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-md-3">
+										<button type="submit" class="btn btn-primary">Tìm gói Tour</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="featured-package col-xs-12">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 featured-package-item">
+						<div class="package-wrapper col-xs-12 noPadding">
+							<h3 class="package-header text-uppercase text-center"><a href="">Lướt sóng trên biển</a></h3>
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/featured-package01.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<div class="package-content col-xs-12 text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus quia provident quam
+							</div>
+							<div class="package-infomation col-xs-12 noPadding">
+								<span class="package-price pull-left">
+									Giá chỉ từ: <br>
+									<money>1.000.000 &#8363;</money>
+								</span>
+								<a href="" class="pull-right package-view-more">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 featured-package-item">
+						<div class="package-wrapper col-xs-12 noPadding">
+							<h3 class="package-header text-uppercase text-center"><a href="">Du lịch trên núi</a></h3>
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/featured-package02.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<div class="package-content col-xs-12 text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus quia provident quam
+							</div>
+							<div class="package-infomation col-xs-12 noPadding">
+								<span class="package-price pull-left">
+									Giá chỉ từ: <br>
+									<money>1.000.000 &#8363;</money>
+								</span>
+								<a href="" class="pull-right package-view-more">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 featured-package-item">
+						<div class="package-wrapper col-xs-12 noPadding">
+							<h3 class="package-header text-uppercase text-center"><a href="">Du lịch băng tuyết</a></h3>
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/featured-package03.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<div class="package-content col-xs-12 text-center">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus quia provident quam
+							</div>
+							<div class="package-infomation col-xs-12 noPadding">
+								<span class="package-price pull-left">
+									Giá chỉ từ: <br>
+									<money>1.000.000 &#8363;</money>
+								</span>
+								<a href="" class="pull-right package-view-more">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="welcome borderd-section col-xs-12 text-center">
+			<div class="container">
+				<div class="wrapper col-xs-12 center-block">
+					<h2 class="text-uppercase">Chào mừng bạn đến với XXX Travel</h2>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+					</p>
+					<ul>
+						<li><a href="" class="blue-button">Giới thiệu</a></li>
+						<li><a href="" class="green-button">Dịch vụ</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="our-special col-xs-12">
+			<div class="container">
+				<div class="our-special-item col-xs-12 col-md-3">
+					<div class="icon pull-left">
+						<img src="lib/images/ser-icon1.png" alt="" class="img-responsive">
+					</div>
+					<h4 class="pull-left">Hoạt động<br>đặc sắc</h4>
+					<p class="col-xs-12 noPadding">Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+				</div>
+
+				<div class="our-special-item col-xs-12 col-md-3">
+					<div class="icon pull-left">
+						<img src="lib/images/ser-icon2.png" alt="" class="img-responsive">
+					</div>
+					<h4 class="pull-left">Du lịch<br>thỏa thích</h4>
+					<p class="col-xs-12 noPadding">Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+				</div>
+
+				<div class="our-special-item col-xs-12 col-md-3">
+					<div class="icon pull-left">
+						<img src="lib/images/ser-icon3.png" alt="" class="img-responsive">
+					</div>
+					<h4 class="pull-left">Cẩm nang<br>du lịch</h4>
+					<p class="col-xs-12 noPadding">Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+				</div>
+
+				<div class="our-special-item col-xs-12 col-md-3">
+					<div class="icon pull-left">
+						<img src="lib/images/ser-icon4.png" alt="" class="img-responsive">
+					</div>
+					<h4 class="pull-left">Làm chủ<br>vùng miền</h4>
+					<p class="col-xs-12 noPadding">Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="featured-package col-xs-12">
+			<div class="container">
+				<h2 class="section-header text-uppercase">Các Tour du lịch tốt nhất</h2>
+				<div class="package-carousel-control">
+					<a href="javascript:;" class="carousel-prev blue-button"><i class="fa fa-angle-left"></i></a>
+					<a href="javascript:;" class="carousel-next blue-button"><i class="fa fa-angle-right"></i></a>
+				</div>
+				<div class="package-carousel">
+					<div class="featured-package-item">
+						<div class="package-wrapper best-package col-xs-12 noPadding">
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/best-package01.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<h3 class="package-header"><a href="">Lướt sóng trên biển</a></h3>
+							<div class="package-content col-xs-12 text-uppercase">
+								PEELAMEDU, CBE, INDIA
+							</div>
+							<div class="package-infomation col-xs-12 noPadding">
+								<div class="col-xs-12 package-quality noPadding">
+									<i class="fa fa-calendar"></i> Thời gian: 5 ngày<br>
+									<i class="fa fa-users"></i> Số người: 3
+								</div>
+								<span class="package-price pull-left">
+									<money>1.000.000 &#8363;</money>
+								</span>
+								<a href="" class="pull-right package-view-more">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="featured-package-item">
+						<div class="package-wrapper best-package col-xs-12 noPadding">
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/best-package02.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<h3 class="package-header"><a href="">Lướt sóng trên biển</a></h3>
+							<div class="package-content col-xs-12 text-uppercase">
+								PEELAMEDU, CBE, INDIA
+							</div>
+							<div class="package-infomation col-xs-12 noPadding">
+								<div class="col-xs-12 package-quality noPadding">
+									<i class="fa fa-calendar"></i> Thời gian: 5 ngày<br>
+									<i class="fa fa-users"></i> Số người: 3
+								</div>
+								<span class="package-price pull-left">
+									<money>1.000.000 &#8363;</money>
+								</span>
+								<a href="" class="pull-right package-view-more">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="featured-package-item">
+						<div class="package-wrapper best-package col-xs-12 noPadding">
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/best-package03.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<h3 class="package-header"><a href="">Lướt sóng trên biển</a></h3>
+							<div class="package-content col-xs-12 text-uppercase">
+								PEELAMEDU, CBE, INDIA
+							</div>
+							<div class="package-infomation col-xs-12 noPadding">
+								<div class="col-xs-12 package-quality noPadding">
+									<i class="fa fa-calendar"></i> Thời gian: 5 ngày<br>
+									<i class="fa fa-users"></i> Số người: 3
+								</div>
+								<span class="package-price pull-left">
+									<money>1.000.000 &#8363;</money>
+								</span>
+								<a href="" class="pull-right package-view-more">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="featured-package-item">
+						<div class="package-wrapper best-package col-xs-12 noPadding">
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/best-package04.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<h3 class="package-header"><a href="">Lướt sóng trên biển</a></h3>
+							<div class="package-content col-xs-12 text-uppercase">
+								PEELAMEDU, CBE, INDIA
+							</div>
+							<div class="package-infomation col-xs-12 noPadding">
+								<div class="col-xs-12 package-quality noPadding">
+									<i class="fa fa-calendar"></i> Thời gian: 5 ngày<br>
+									<i class="fa fa-users"></i> Số người: 3
+								</div>
+								<span class="package-price pull-left">
+									<money>1.000.000 &#8363;</money>
+								</span>
+								<a href="" class="pull-right package-view-more">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="featured-package-item">
+						<div class="package-wrapper best-package col-xs-12 noPadding">
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/best-package05.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<h3 class="package-header"><a href="">Lướt sóng trên biển</a></h3>
+							<div class="package-content col-xs-12 text-uppercase">
+								PEELAMEDU, CBE, INDIA
+							</div>
+							<div class="package-infomation col-xs-12 noPadding">
+								<div class="col-xs-12 package-quality noPadding">
+									<i class="fa fa-calendar"></i> Thời gian: 5 ngày<br>
+									<i class="fa fa-users"></i> Số người: 3
+								</div>
+								<span class="package-price pull-left">
+									<money>1.000.000 &#8363;</money>
+								</span>
+								<a href="" class="pull-right package-view-more">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="borderd-section testimonial col-xs-12">
+			<div class="container">
+				<h2 class="text-center">Ý kiến khách hàng</h2>
+				<div class="tesimonial-carousel">
+					<div class="item">
+						<div class="author col-xs-12 col-md-2">
+							<img src="lib/images/author01.jpg" alt="" class="img-responsive center-block">
+						</div>
+						<div class="detail col-xs-12 col-md-10">
+							<blockquote>
+								<q>
+									Donec quis vulputate lectus. Sed tempor venenatis elementum. Cras commodo lacus nec imperdiet dignissim. Nunc scelerisque interdum diam a aliquam. Vestibulum eget massa auctor, consequat quam ut, auctor nibh. Nam volutpat odio sit amet ullamcorper placerat. Aliquam porta tincidunt urna ac commodo.
+								</q>
+							</blockquote>
+							<div class="author-detail pull-right">
+								<b>Lê Ngọc Long</b>,
+								<span>3S JSC Company</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="author col-xs-12 col-md-2">
+							<img src="lib/images/author02.jpg" alt="" class="img-responsive center-block">
+						</div>
+						<div class="detail col-xs-12 col-md-10">
+							<blockquote>
+								<q>
+									Donec quis vulputate lectus. Sed tempor venenatis elementum. Cras commodo lacus nec imperdiet dignissim. Nunc scelerisque interdum diam a aliquam. Vestibulum eget massa auctor, consequat quam ut, auctor nibh. Nam volutpat odio sit amet ullamcorper placerat. Aliquam porta tincidunt urna ac commodo.
+								</q>
+							</blockquote>
+							<div class="author-detail pull-right">
+								<b>Lê Ngọc Long</b>,
+								<span>3S JSC Company</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="author col-xs-12 col-md-2">
+							<img src="lib/images/author03.jpg" alt="" class="img-responsive center-block">
+						</div>
+						<div class="detail col-xs-12 col-md-10">
+							<blockquote>
+								<q>
+									Donec quis vulputate lectus. Sed tempor venenatis elementum. Cras commodo lacus nec imperdiet dignissim. Nunc scelerisque interdum diam a aliquam. Vestibulum eget massa auctor, consequat quam ut, auctor nibh. Nam volutpat odio sit amet ullamcorper placerat. Aliquam porta tincidunt urna ac commodo.
+								</q>
+							</blockquote>
+							<div class="author-detail pull-right">
+								<b>Lê Ngọc Long</b>,
+								<span>3S JSC Company</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-arrow">
+					<a href="javascript:;" class="carousel-testimonial-prev"></a>
+					<a href="javascript:;" class="carousel-testimonial-next"></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="why-choose col-xs-12">
+			<div class="container">
+				<div class="col-xs-12 col-md-5 col-md-push-7">
+					<img src="lib/images/responsive.png" alt="" class="img-responsive center-block">
+				</div>
+				<div class="col-xs-12 col-md-7 col-md-pull-5">
+					<h4>Tại sao bạn nên chọn XXX Travel</h4>
+					<div class="why-choose-content col-xs-12 noPadding">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis amet voluptatum exercitationem esse inventore veniam velit temporibus fuga asperiores eveniet tempora est architecto et ea, repellat tempore magni tenetur ut.<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, deserunt placeat odio fugit ad ut impedit consequatur ducimus repellat. Illo dolore non vitae fugit in ratione laborum quas, explicabo harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nulla laudantium obcaecati error odit optio ipsum ut ratione dolores rerum sit enim accusantium id sequi, nobis, quasi accusamus quam iste!
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="parallax-video col-xs-12">
+			<div class="container">
+				<div class="col-xs-12 col-md-6 col-md-push-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/52742614"></iframe>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-md-pull-6 parallax-video-description">
+					<h4 class="text-uppercase">Cùng tham gia vào những trải nghiệm<br><span>tuyệt vời nhất</span></h4>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</section>
+
+		<section class="featured-package combo-package col-xs-12">
+			<div class="container">
+				<h2 class="section-header text-uppercase">Combo du lịch hấp dẫn</h2>
+				<div class="row">
+					<div class="col-xs-12 col-md-4 featured-package-item combo-package-type-purple">
+						<div class="package-wrapper col-xs-12 noPadding">
+							<h3 class="package-header text-uppercase text-center">Trăng mật nghỉ dưỡng 2 ngày 3 đêm</h3>
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/featured-package01.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<div class="package-content col-xs-12 text-center">
+								<h5>Nghỉ dưỡng tại Catherenes Home</h5>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus quia provident quam
+							</div>
+							<div class="package-infomation col-xs-12 noPadding text-center">
+								<img src="lib/images/hotel-logo01.png" alt="" class="img-responsive center-block">
+								<a href="" class="center-block package-view-more green-button">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 featured-package-item combo-package-type-orange">
+						<div class="package-wrapper col-xs-12 noPadding">
+							<h3 class="package-header text-uppercase text-center">Trăng mật nghỉ dưỡng 2 ngày 3 đêm</h3>
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/featured-package04.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<div class="package-content col-xs-12 text-center">
+								<h5>Nghỉ dưỡng tại Catherenes Home</h5>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus quia provident quam
+							</div>
+							<div class="package-infomation col-xs-12 noPadding text-center">
+								<img src="lib/images/hotel-logo02.png" alt="" class="img-responsive center-block">
+								<a href="" class="center-block package-view-more green-button">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 featured-package-item combo-package-type-pink">
+						<div class="package-wrapper col-xs-12 noPadding">
+							<h3 class="package-header text-uppercase text-center">Trăng mật nghỉ dưỡng 2 ngày 3 đêm</h3>
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/featured-package05.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<div class="package-content col-xs-12 text-center">
+								<h5>Nghỉ dưỡng tại Catherenes Home</h5>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus quia provident quam
+							</div>
+							<div class="package-infomation col-xs-12 noPadding text-center">
+								<img src="lib/images/hotel-logo03.png" alt="" class="img-responsive center-block">
+								<a href="" class="center-block package-view-more green-button">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="blogs col-xs-12">
+			<div class="container">
+				<h2 class="text-center">Tin tức du lịch</h2>
+				<p class="text-center section-sapo">Các tin tức du lịch và chương trình khuyển mãi mới nhất</p>
+				<div class="row">
+					<div class="col-xs-12 col-md-4 featured-package-item blogs-item">
+						<div class="entry-date col-xs-12 noPadding">
+							<p>29 <span>T07 - 2016</span></p>
+							<span></span>
+						</div>
+						<div class="package-wrapper col-xs-12 noPadding">
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/featured-package01.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<div class="package-content col-xs-12">
+								<h3 class="package-header text-uppercase"><a href="">Du lịch Thái Lan 2016</a></h3>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsum reiciendis ullam harum tenetur, mollitia necessitatibus possimus, omnis esse illo aut neque accusamus, deserunt, repudiandae voluptatem ducimus. Vero, minus rem.
+							</div>
+							<div class="package-infomation col-xs-12 noPadding text-center">
+								<a href="" class="package-view-more center-block">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 featured-package-item blogs-item">
+						<div class="entry-date col-xs-12 noPadding">
+							<p>29 <span>T07 - 2016</span></p>
+							<span></span>
+						</div>
+						<div class="package-wrapper col-xs-12 noPadding">
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/featured-package04.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<div class="package-content col-xs-12">
+								<h3 class="package-header text-uppercase"><a href="">Du lịch Thái Lan 2016</a></h3>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsum reiciendis ullam harum tenetur, mollitia necessitatibus possimus, omnis esse illo aut neque accusamus, deserunt, repudiandae voluptatem ducimus. Vero, minus rem.
+							</div>
+							<div class="package-infomation col-xs-12 noPadding text-center">
+								<a href="" class="package-view-more center-block">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-4 featured-package-item blogs-item">
+						<div class="entry-date col-xs-12 noPadding">
+							<p>29 <span>T07 - 2016</span></p>
+							<span></span>
+						</div>
+						<div class="package-wrapper col-xs-12 noPadding">
+							<a href="" class="package-thumbnail">
+								<img src="lib/images/featured-package03.jpg" alt="" class="img-responsive center-block">
+								<div class="image-overlay">
+									<span class="image-overlay-inside"></span>
+								</div>
+							</a>
+							<div class="package-content col-xs-12">
+								<h3 class="package-header text-uppercase"><a href="">Du lịch Thái Lan 2016</a></h3>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsum reiciendis ullam harum tenetur, mollitia necessitatibus possimus, omnis esse illo aut neque accusamus, deserunt, repudiandae voluptatem ducimus. Vero, minus rem.
+							</div>
+							<div class="package-infomation col-xs-12 noPadding text-center">
+								<a href="" class="package-view-more center-block">Xem Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mail-chimp col-xs-12">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 mail-chimp-item">
+						<img src="lib/images/add01.jpg" alt="" class="img-responsive center-block">
+					</div>
+					<div class="col-xs-12 col-md-4 mail-chimp-item">
+						<div class="form-mail-chimp-wrapper text-center col-xs-12 noPadding">
+							<h4>Đăng ký Email để nhận tin tức từ chúng tôi</h4>
+							<b class="text-uppercase">Cam kết không Spam</b>
+							<form action="" method="POST" role="form" class="col-xs-12">
+								<div class="col-xs-8 noPadding">
+									<div class="form-group">
+										<input type="email" class="form-control" id="" placeholder="Địa chỉ Email">
+									</div>
+								</div>
+								<div class="col-xs-4 noPadding">
+									<button type="submit" class="btn btn-primary green-button">Đăng ký</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 mail-chimp-item">
+						<img src="lib/images/add02.jpg" alt="" class="img-responsive center-block">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer col-xs-12 noPadding" id="footer">
+		<div class="footer-top footer-section col-xs-12 noPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-3">
+						<img src="lib/images/footer-logo1.png" alt="" class="img-responsive center-block">
+						<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+						<ul class="social">
+							<li><a href="" class="fa fa-facebook"></a></li>
+							<li><a href="" class="fa fa-twitter"></a></li>
+							<li><a href="" class="fa fa fa-flickr"></a></li>
+							<li><a href="" class="fa fa fa-youtube"></a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-9">
+						<h4 class="tag-link-header">Từ khóa hữu ích</h4>
+						<div class="row">
+							<div class="col-xs-12 col-md-3 tag-link">
+								<ul class="nav">
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-md-3 tag-link">
+								<ul class="nav">
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-md-3 tag-link">
+								<ul class="nav">
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-md-3 tag-link">
+								<ul class="nav">
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+									<li><a href="">Tags Link</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-row footer-section col-xs-12 noPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-3">
+						<h4 class="footer-row-header">Hotline đặt Tour</h4>
+						<div class="media">
+							<a class="pull-left" href="javascript:;">
+								<i class="fa fa-phone media-object"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">84-128-223-6969</h4>
+								<p>Hỗ trợ: 08h00 - 21h00</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<h4 class="footer-row-header">Gửi phản hồi</h4>
+						<div class="media">
+							<a class="pull-left" href="javascript:;">
+								<i class="fa fa-envelope media-object"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">abc@gmail.com</h4>
+								<p>Giúp chúng tôi phát triển hơn</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<h4 class="footer-row-header">Dịch vụ và hỗ trợ</h4>
+						<div class="media">
+							<a class="pull-left" href="javascript:;">
+								<i class="fa fa-headphones media-object"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Trung tâm hỗ trợ</h4>
+								<p>Giải đáp mọi thắc mắc của bạn</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<h4 class="footer-row-header">Đối tác</h4>
+						<div class="col-xs-6">
+							<img src="lib/images/client1.png" alt="" class="img-responsive center-block">
+						</div>
+						<div class="col-xs-6">
+							<img src="lib/images/client2.png" alt="" class="img-responsive center-block">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom footer-section col-xs-12 noPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-7">
+						<ul class="footer-menu">
+							<li><a href="">Trang chủ</a></li>
+							<li><a href="">Giới thiệu</a></li>
+							<li><a href="">Liên hệ</a></li>
+							<li><a href="">Đặt phòng</a></li>
+						</ul>
+						<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex.
+						Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. <a href="">Terms & Privacy Policy</a> eugiat a, tellus. 
+						Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+					</div>
+					<div class="col-xs-12 col-md-5 text-right trusted-logo">
+						<img src="lib/images/trust-logo.png" alt="" class="img-responsive pull-right">
+						<p class="pull-right">Your trustworthy partner<br>for travel needs</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright col-xs-12 noPadding text-right">
+			<div class="container">
+				<p>© 2016 - XXX Travel - by 3S JSC</p>
+			</div>
+		</div>
+	</footer>
+  	<!-- Load JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="lib/js/wow.min.js"></script>
+	<script type="text/javascript" src="lib/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+@import 'variable.sass';
+@import 'mobile.sass';
+@import 'tablet.sass';
+@import 'desktop.sass';
+
+body 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $textColor;
+	width: 100%;
+
+.top-header
+	background: $blue;
+	color: #fff;
+	padding: 10px 0;
+.main-navigation
+	nav 
+		background: #fff;
+		min-height: 115px;
+		box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.3);
+		border-bottom: 1px solid #e8e8e8;
+	.responsive-navbar
+		ul 
+			li 
+				a 
+					color: $textColor; 
+					text-transform: uppercase;
+					font-size: 1em;
+					font-weight: 700;
+					padding: 9px 19px;
+					&:hover 
+						background: $yellow;
+						border-radius: 4px
+			.active 
+				a 
+					background: $yellow;
+					border-radius: 4px
+
+.bg-slider
+	.bg-item
+		min-height: 600px;		
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top left;	
+.filer
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	z-index: 100;
+	.nav-tabs
+		border: none;
+		.active
+			a 
+				background: rgba(255,255,255, 0.9);
+				color: #2c3e50;
+		li 
+			a 
+				background: $green;
+				border: none;
+				color: #fff;
+				text-transform: uppercase;
+				font-weight: 700;
+				padding: 12px 13px;
+				font-size: 1.1em;
+	.tab-pane 
+		background: rgba(255,255,255, 0.9);		
+		float: left;	
+		padding: 30px 2% 12px;	
+		.select-box:after 
+			content: "";
+			background-image: url('../images/select.png');
+			width: 52px;
+			height: 43px;
+			pointer-events: none;
+			position: absolute;
+			top: 11px;
+			right: 16px;
+			border-radius: 0px 3px 3px 0px;
+		.form-control
+			padding: 11px 12px;
+			min-height: 44px;
+			margin-top: 10px;
+			color: #a0a0a0;
+			border: 1px solid #e4e8ea;
+			border-radius: 3px;
+		button[type="submit"]
+			margin-top: 10px;
+			padding: 11px 12px;
+			min-height: 44px;
+			margin-top: 10px;
+			color: #a0a0a0;
+			border: 1px solid #e4e8ea;
+			border-radius: 3px;
+			color: #2c3e50;
+			background: $yellow;
+			text-transform: uppercase;
+			font-weight: 700;
+			box-shadow: none;
+			text-shadow: none;
+			width: 100%;
+			&:hover 
+				color: #fff;
+				background: $green;
+
+section 
+	padding: 80px 0;
+	background: #fff;
+	.section-header
+		font-weight: 300;
+		border-bottom: 1px solid #f9f9f9;
+		padding-bottom: 12px;
+		position: relative;
+		margin-bottom: 35px;
+		&:before 
+			bottom: -1px;
+			content: "";
+			height: 4px;
+			position: absolute;
+			width: 74px;
+			background: $yellow;
+
+.best-package
+	.package-header
+		padding: 0 15px!important;	
+		font-size: 1.2em!important;
+	.package-content
+		padding: 0 15px 15px 15px!important;	
+		font-size: 1em!important;	
+	.package-quality
+		margin-bottom: 15px;
+		font-size: .9em;
+		color: $grey;
+	&:hover 
+		.package-thumbnail .image-overlay-inside:before
+			content: "\f0b1"!important;
+
+.featured-package
+	.container 
+		position: relative;
+	.package-carousel-control
+		position: absolute;
+		top: 18px;
+		right: 0;
+		a 
+			border-radius: 0;
+			display: inline-block;
+			padding: 0;
+			height: 40px;
+			width: 40px;
+			font-size: 1.8em;
+			text-align: center;
+			&:hover 
+				color: #fff;
+				background: $green;
+
+.package-wrapper
+	border: 1px solid #eceeeb;
+	&:hover 
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+		.package-header a
+			color: $blue;
+		.package-thumbnail
+			.image-overlay
+				opacity: 1;	
+		money 
+			color: $green!important;
+		.package-view-more 
+			background: $green!important;
+	.package-thumbnail 
+		display: block;
+		position: relative;
+		img 
+			width: 100%;	
+		.image-overlay
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: 500;
+			opacity: 0;
+			transition: opacity 0.4s ease-in-out;
+			background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.7) 100%);
+			.image-overlay-inside
+				position: absolute;
+				font-size: 24px;
+				border-radius: 50px;
+				height: 100%;
+				width: 100%;
+				line-height: 80px;
+				left: 0;
+				top: 0;
+				margin: 0px;
+				z-index: 500;
+				text-align: center;
+				color: #fff;
+				&:before 
+					content: "\f133";
+					background: $green;
+					position: absolute;
+					border-radius: 50px;
+					height: 70px;
+					width: 70px;
+					line-height: 70px;
+					left: 50%;
+					top: 50%;
+					margin: -35px 0 0 -35px;
+					z-index: 500;
+					text-align: center;
+					color: #fff;
+					font-family: FontAwesome;
+	.package-header
+		padding: 20px 30px;
+		font-size: 1.5em;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		a 
+			color: #2c3e50;	
+	.package-content
+		padding: 20px;
+		color: $grey;	
+		font-size: 1.2em;
+		border-bottom: 1px solid #eceeeb;
+	.package-infomation
+		padding: 20px;
+		.package-price 
+			color: #bdbdbd;
+			text-transform: uppercase;
+			money 
+				color: #2c3e50;
+				font-weight: 700;
+				font-size: 1.2em;
+		.package-view-more
+			padding: 7px 13px;
+			border-radius: 5px;
+			background: $grey;
+			color: #fff;
+			font-size: .9em;
+.welcome
+	background: #f6f6f6;
+	p 
+		color: #616161;
+		font-size: 1.2em;
+		padding: 20px 0;
+	.wrapper			
+		max-width: 940px;
+		float: none;
+		h2 
+			color: $blue;
+			background: url(../images/hr-white-three.png) no-repeat center bottom;
+			display: block;
+			height: 75px;
+			padding: 0 0 15px;
+			text-transform: uppercase;
+			width: 100%;
+		ul 
+			li 
+				display: inline-block;
+				list-style: none;
+				margin-right: 20px;
+
+.our-special 
+	padding-bottom: 0;
+	.our-special-item:hover 
+		.icon img 
+			animation: toBottomFromTop 0.3s forwards;
+	.icon 
+		background: #6dc82b;
+		width: 70px;
+		text-align: center;
+		margin-right: 25px;
+		height: 70px;
+		position: relative;
+		border-radius: 3px;
+		img 
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+	h4 
+		margin-bottom: 10px;
+		font-size: 1.5em;
+		line-height: 1.5;
+		display: inline-block;
+		margin-top: 5px;
+		font-weight: 400;
+	p 
+		padding: 30px 0 15px;
+
+.testimonial 
+	background: #f6f6f6;
+	h2 
+		font-weight: 300;
+		position: relative;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #f9f9f9;
+		&:before 
+			bottom: -1px;
+			content: "";
+			height: 4px;
+			position: absolute;
+			width: 74px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			background: $yellow;
+
+.testimonial
+	.tesimonial-carousel
+		margin-top: 40px;
+		.author 
+			img 
+				border-radius: 100%;
+		.detail 
+			blockquote 
+				border: none;
+				q 
+					font-style: italic;
+					color: #616161;
+					font-size: .9em;	
+		.author-detail 
+			color: #616161;
+			span 
+				color: #bdbdbd;
+				font-size: .9em;	
+	.container 
+		position: relative;
+		a
+			background: url('../images/carousel-arrows.png') no-repeat;
+			width: 35px;
+			height: 68px;
+			float: left;
+			text-align: center;
+			position: absolute;
+			top: 52%;	
+			display: block;
+		.carousel-testimonial-prev 
+			background-position: left top;
+			left: -70px;
+			&:hover 
+				background-position: left bottom
+		.carousel-testimonial-next 
+			background-position: right top;
+			right: -70px;
+			&:hover 
+				background-position: right bottom
+.why-choose
+	h4 
+		margin-bottom: 30px;		
+
+.parallax-video
+	color: #fff;
+	background-image: url("../images/parallax_img.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	.parallax-video-description
+		h4 
+			color: #fff;
+			font-weight: 300;
+			font-size: 1.8em;
+			margin-bottom: 25px;
+			span 
+				font-size: 2.5em;
+.combo-package
+	&:hover 
+		.package-thumbnail .image-overlay-inside:before
+			content: "\f06b"!important;
+
+	.package-header
+		margin: 0;
+		color: #fff;	
+		white-space: normal;
+		font-weight: 600;
+		font-size: 1.3em;	
+		line-height: 1.8;
+		height: calc(1.3em * 2.1 * 2);	
+	h5
+		font-size: 1.2em!important;
+		font-weight: 400;
+	.package-content
+		font-size: 1.1em;
+		border: none;
+	.package-infomation
+		padding-bottom: 30px;
+		a 
+			display: block;
+			max-width: 160px;
+			background: $green!important;
+			&:hover 
+				background: $grey!important;
+		img 
+			margin-bottom: 25px;
+
+.combo-package-type-purple
+	.package-wrapper
+		border-bottom: 5px solid $purple;
+	.package-header
+		background: $purple;
+	h5
+		color: $purple!important;
+
+.combo-package-type-orange
+	.package-wrapper
+		border-bottom: 5px solid $orange;
+	.package-header
+		background: $orange;
+	h5
+		color: $orange!important;
+
+.combo-package-type-pink
+	.package-wrapper
+		border-bottom: 5px solid $pink;
+	.package-header
+		background: $pink;
+	h5
+		color: $pink!important;
+
+.blogs
+	padding-top: 0;
+	background: none;
+	.blogs-item
+		&:hover 
+			.package-thumbnail .image-overlay-inside:before
+				content: "\f040"!important;
+		&:last-child 
+			.entry-date
+				span
+					&:before 
+						display: none;
+				p span 
+					display: inline-block;
+	.section-sapo
+		margin-bottom: 35px;
+		font-style: italic;
+		color: $grey;
+	h2 
+		font-weight: 300;
+		margin-bottom: 35px;
+		position: relative;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #f9f9f9;
+		&:before 
+			bottom: -1px;
+			content: "";
+			height: 4px;
+			position: absolute;
+			width: 74px;
+			background: $yellow;
+			margin: auto;
+			left: 0;
+			right: 0;
+	.entry-date 
+		color: $green;
+		&:before 
+			border-top: 1px solid #eceeeb;
+			float: left;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			content: "";
+			top: 46%;
+			z-index: -1;
+		span
+			&:before 
+				left: 9%;
+				border-top: 1px solid #eceeeb;
+				float: left;
+				width: 100%;
+				position: absolute;
+				content: "";
+				top: 46%;
+				z-index: -1;
+		p 
+			background: #fff;
+			width: 100px;
+			height: 100px;
+			border: 1px solid #eceeeb;
+			border-radius: 100%;
+			text-align: center;
+			font-size: 1.8em;
+			margin: 0 auto 20px;
+			padding-top: 20px;
+			line-height: 1;
+			span 
+				display: inline-block;
+				font-size: 16px;
+				position: relative;
+				top: -7px;
+				width: 100%;
+				&:before 
+					display: none;
+	.package-header
+		margin: 0;
+		padding-left: 0;
+		font-size: 1.1em;
+	.package-content
+		font-size: 1em;
+		border: none;
+	.package-view-more
+		max-width: 130px;
+
+.mail-chimp
+	color: #fff
+	background-image: url("../images/footer-parallax.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	.mail-chimp-item
+		min-height: 195px;
+		img 
+			width: 100%;
+	.form-mail-chimp-wrapper
+		background: url('../images/newsletter-bg.jpg');
+		padding: 15px;
+		min-height: 195px;
+		b 
+			font-size: 1.2em;
+		h4
+			color: #fff;
+			font-weight: 300;
+			font-size: 1em;
+		form 
+			margin-top: 20px;
+			.form-control
+				border: none;
+				border-radius: 0;
+			button[type="submit"]
+				width: 100%;
+				border-radius: 0;
+				box-shadow: none;
+				border: none;
+				text-shadow: none;
+				padding: 6px 12px;
+.footer 
+	.footer-top 
+		background: #fbfbfb;
+		color: $grey;
+		.tag-link-header
+			margin-top: 0;
+			margin-bottom: 30px;
+			background: #fff;
+			display: inline-block;
+			padding: 13px 20px;
+			border-bottom: 2px solid $green;
+			border-top: 1px solid #ededed;
+			border-left: 1px solid #ededed;
+			border-right: 1px solid #ededed;
+			color: $grey;
+			font-weight: 300;
+			font-size: 1em;
+		.tag-link
+			.nav 
+				li 
+					padding: 6px 0 6px 20px;
+					&:before 
+						font-family: FontAwesome;
+						font-style: normal;
+						font-weight: normal;
+						text-decoration: inherit;
+						font-size: 14px;
+						position: absolute;
+						top: 6px;
+						left: 0px;
+						content: "\f105";
+						color: #2C3E50;
+					a 
+						color: $grey;
+						font-size: .9em;
+						padding: 0;
+						&:hover 
+							background: none;
+		img 
+			margin-bottom: 20px;
+		.social 
+			padding: 0;
+			margin-top: 15px;
+			li 
+				list-style: none;
+				display: inline-block;	
+				float: left;
+				border: 1px solid #d3d3d3;
+				border-left: 0;
+				a 
+					color: $grey;
+					height: 48px;
+					width: 48px;
+					display: block;
+					text-align: center;
+					line-height: 48px;	
+					font-size: 1.2em;
+				&:first-child 
+					border-left: 1px solid #d3d3d3!important;	
+	.footer-section
+		padding: 50px 0;
+		border-top: 1px solid #e4e8ea;
+	.footer-row
+		.footer-row-header
+			margin-bottom: 25px;
+		.media 
+			a 
+				margin-right: 10px;
+		.media-object
+			font-size: 1.8em;
+		.media-heading
+			font-size: 1.2em;
+			font-weight: 400;
+		.media-body 
+			p 
+				font-size: .8em;
+				color: #8b8b8b;
+.footer-bottom
+	font-size: .8em;
+	.footer-menu
+		padding: 0;
+		li 
+			display: inline-block;
+			list-style: none;	
+			border-right: 1px solid #337ab7;	
+			a 
+				padding: 0 10px;		
+			&:first-child 
+				a 
+					padding-left: 0;
+			&:last-child 
+				border: none;
+	.trusted-logo
+		p 
+			margin-right: 15px;
+			padding-top: 10px;
+.copyright
+	background: $blue;
+	color: #fff;
+	padding: 15px 0;
+	p 
+		margin: 0;			

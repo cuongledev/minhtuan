@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+.content-wrapper { background: #fff; }
+body, h1, h2, h3, h4, h5, h6, p, a { font-family: arial; }
+.btn{
+	border-radius: 0px;
+}
+.portlet > .portlet-title > .caption {
+    float: left;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.portlet > .portlet-title {
+    border-bottom: 1px solid #BBB9B9;
+    padding: 0;
+    margin-bottom: 10px;
+    min-height: 41px;
+}
+.actions{
+	float: right;
+    display: inline-block;
+    padding: 6px 0;
+}
+.btn{
+	padding: 4px 10px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.btn-file{
+	padding-left: 0px;
+}
+.btn-file .fileinput-new{
+	display: none;
+}
+.btn-file .file_logo{
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    margin: 0;
+	    font-size: 23px;
+	    cursor: pointer;
+	    opacity: 0;
+	    
+	    transform: translate(-300px, 0) scale(4);
+	    direction: ltr;
+}
+
+/***  Đoàn Việt Quân custom  *********/
+/* common */
+.item-cursor { cursor: pointer; }
+
+/* contact */
+.reply-contact {display: none; position:absolute; top:0; left:10%; z-index: 100; background: #fff;border:1px solid #ccc; border-radius: 5px; width:80%; padding:10px;  }
+.reply-contact .btn-hide-contact{ position: absolute; top:25px; right:15px; background: #ccc; padding:5px 10px; text-align: center; color:red; font-weight: bold; cursor:pointer; border-radius: 5px; }
+.reply-contact h4{ background: #3C8DBC; padding:10px; text-align: center; color:#fff; }
+.btn-show-contact { margin-right: 5px; }
+.btn-reply-contact { margin-top:10px; }
+
+/*news*/
+.basic-info { border:1px solid #ccc; padding:10px 5%;width:90%; margin-bottom: 20px; }
+.basic-info .title { padding:10px; border-bottom: 1px solid #ccc;}
+.basic-info .title #title{ text-transform: uppercase; font-size: 20px; font-weight: bold; color:#F778A1;}
+
+.required { color:red; }
+.list-category { list-style:none; }
+.list-category li:first-child { border-bottom: 1px dotted #ccc; }
+.form-group .form-left { width:20%; float:left; text-align: right; }
+.form-group .form-right { width:75%; float:right; text-align: left; margin-left:5%; }
+.form-group { clear:both; margin-bottom: 10px; overflow: hidden; }
+.thumbnail img { height:140px; text-align: center;}
+
+.change-sort {display: none; position:absolute; top:0; left:30%; z-index: 100; background: #fff;border:1px solid #ccc; border-radius: 5px; width:30%; padding:10px;  }
+.change-sort .btn-hide-sort{ position: absolute; top:25px; right:15px; background: #ccc; padding:5px 10px; text-align: center; color:red; font-weight: bold; cursor:pointer; border-radius: 5px; }
+.change-sort h4{ background: #3C8DBC; padding:10px; text-align: center; color:#fff; }
+.btn-change-sort { margin-top:10px; }
+
+.sv-tab-content { border:1px solid #ccc; margin-bottom: 10px; overflow: hidden;}
+.sv-tab-content .page-header { margin-top:0; padding:5px 10px; border-left:3px solid #3c8dbc; }
+.sv-tab-content h4{color: #3c8dbc;}
+
+
+
+
+
+
+

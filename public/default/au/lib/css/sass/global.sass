@@ -1,0 +1,723 @@
+@import 'variable.sass';
+@import 'mobile.sass';
+@import 'tablet.sass';
+@import 'desktop.sass';
+
+body 
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $textColor;
+
+.responsive-navbar 
+	.login-icon
+		img 
+			width: 30px;
+			border: 1px solid #fff; 
+			border-radius: 100%;
+			padding: 5px;
+	ul 
+		li 
+			a 
+				font-weight: 500;
+				font-size: 15px;
+.hero-title
+	color: #fff
+	font-weight: 700;
+	padding: 90px 0
+	p 
+		font-size: 18px;
+.explore-tools
+	color: #999;
+	padding: 15px;
+	background: rgba(255,255,255,.1);
+	border-radius: 10px
+	form 
+		legend
+			color: #fff
+			border: none 
+			font-size: 36px;
+			font-weight: 700;
+			span 
+				color: $mainColor
+		.explore-submit
+			background: $mainColor; 
+			border-radius: 0;
+			box-shadow: 0 1px 2px rgba(0,0,0, .4);
+			border: none;
+			font-size: 15px;
+			font-weight: 500;
+	.form-group
+		position: relative
+	.input-group-addon
+		background: #f5f5f5;
+		border: none;
+		border-radius: 0;
+		position: absolute;
+		top: 5px;
+		left: 0;
+		color: #999
+.arcodion-section
+	padding: 70px 0;
+	background: #f6f6f6;
+	.arcodion-text
+		color: $secondtextColor;
+	.arcodion-images
+		margin: 30px 0;
+
+section 
+	h2 
+		color: $secondtextColor;
+		margin-bottom: 25px;
+		span 
+			color: $mainColor;
+			font-weight: 700;
+
+.cta-section
+	background: url(../images/cta-bg.jpg) no-repeat top left fixed / cover;
+	padding: 90px 0;
+	font-size: 14px;
+	.overplay-cta-section
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.4);
+		top: 0;
+		left:0;
+		display: block;
+	.cta-section-text
+		color: #fff;
+		h2 
+			color: #fff
+			span 
+				color: $mainColor;
+	.cta-section-button
+		background: none;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #fff;
+		text-shadow: none;
+		border-radius: 0;
+		border: 1px solid $mainColor;
+		padding: 15px 20px;
+		position: relative;
+		transitionDelay(250ms)
+		&:before 
+			content: ""
+			width: 90%
+			height: 75%
+			position: absolute;
+			display: block;
+			top: 12%;
+			left: 5%;
+			border: 1px solid #fff;
+		&:hover 
+			background: $mainColor;
+			transitionDelay(250ms)
+.featured-work
+	padding: 55px 0;
+	.cover-headline		
+		font-size: 14px;
+		color: $secondtextColor;
+.work-list-wrapper			
+	.work-item
+		border: 1px solid #f6f6f6
+		padding: 15px
+		&:before 
+			content: "";
+			display: block;
+
+	.work-item-detail
+		span 
+			font-size: 13px;
+			font-weight: 300;
+			color: #999999;
+			a 
+				color: #999999;
+	.work-item-title
+		margin-bottom: 15px;
+		max-height: 15px*2*1.5;
+		overflow: hidden;
+		display: block;
+		text-overflow: ellipsis;
+		min-height: 22px;
+		a 
+			color: $textColor;
+			font-weight: 700;
+			font-size: 15px;
+			text-decoration: underline;
+			&:hover 
+				color: $mainColor;
+	.work-item-description
+		margin-bottom: 15px;
+		max-height: 13px*3*1.5;
+		overflow: hidden;
+		display: block;
+		text-overflow: ellipsis;
+	.work-wrapper
+		margin: 15px 0;
+	.work-item-logo
+		overflow: hidden;
+		border: 4px solid #f6f6f6;
+		transitionDelay(250ms)
+		img 
+			width: 100%;
+		&:hover 
+			border-color: $mainColor;
+			transitionDelay(250ms)
+.featured-work-view-more
+	background: $mainColor;
+	border: none; 
+	border-radius: 0;
+	color: #fff;
+	text-shadow: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 10px 40px;
+	position: relative;
+	box-shadow: none;
+	&:before 
+		content: "";
+		display: block;
+		position: absolute;
+		top: 6px;
+		left: 10px;
+		background: none;
+		border: 1px solid #fff;
+		width: 90%;
+		height: 75%;
+.cta-section-bottom
+	background: url(../images/cta-bottom-bg.jpg) no-repeat top left fixed / cover;
+	height: 350px;
+.partner-section
+	padding: 50px 0;
+	h3 
+		span 
+			color: $mainColor;
+			font-weight: 500;
+	.partner-carousel
+		margin-top: 30px;
+		.owl-lazy 
+			border: 2px solid #f6f6f6
+
+.blog-section
+	padding: 50px 0;
+	.blog-headline
+		margin-bottom: 35px;
+		span
+			color: $mainColor;
+			font-weight: 500;
+	.blog-logo
+		border-right: 1px solid #e7e7e7
+	.blog-content 
+		a 
+			color: #333;
+			font-size: 15px;
+		span 
+			color: #999;
+
+.footer 
+	background: #40484e;
+	padding: 50px 0 0;
+	.footer-col
+		.footer-headline
+			font-size: 16px;
+			color: #fff;
+			font-weight: 500;
+			border-bottom: 1px solid #4b545a;
+			padding-bottom: 5px;
+		.footer-list
+		 	a 
+		 		padding-left: 0;
+		 		color: #e6e6e6;
+		 		&:hover, &:active, &:focus, &:visited
+		 			background: none;
+		 		&:hover 
+		 			color: $mainColor;
+		.social-network
+			li 
+				display: inline-block;
+				font-size: 16px;
+				margin-right: 15px;
+				a 
+					color: #fff
+					border-radius: 100%
+					&:hover 
+						color: #fff
+			.facebook
+				a 
+					padding: 8px 15px;
+					background: #3B5998;
+			.googleplus
+				a 
+					padding: 8px 12px;
+					background: #CE3633;
+	.register
+		color: #e6e6e6
+		border-top: 1px solid #4b545a;
+		padding: 15px 0
+	.copyright
+		margin: 30px 0;
+		color: #e6e6e6;
+		.owner-list
+			li 
+				list-style: none; 
+				display: inline-block;
+				margin-right: 15px;
+				border-right: 1px solid #4b545a;
+				&:last-child 
+					border: none;
+				a 
+					color: #e6e6e6;
+					padding: 0 15px 0 0;
+.totop
+	position: fixed;
+	right: 4%;
+	bottom: 4%;
+	color: $mainColor;
+	background: #e6e6e6
+	font-size: 20px;
+	padding: 8px 15px;					
+
+.register-section
+	background: url(../images/register-bg.jpg) no-repeat bottom left / cover
+	padding: 200px 0
+	.register-wrapper
+		padding: 20px;
+		background: rgba(0,0,0,.35)
+	form 
+		legend
+			border: none;
+			color: #fff; 
+			font-weight: 700;
+			font-size: 30px;
+			text-shadow: 0 1px 1px #000;
+			span 
+				color: $mainColor;
+		.register-button 
+			background: $mainColor; 
+			border-radius: 0;
+			box-shadow: 0 1px 2px rgba(0,0,0, .4);
+			border: none;
+			font-size: 18px;
+			font-weight: 500;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			padding: 10px 20px;
+			position: relative;
+			border: 1px solid $mainColor;
+			&:before 
+				content: "";
+				display: block;
+				position: absolute;
+				width: 90%;
+				height: 73%;
+				top: 6px;
+				left: 9px;
+				border: 1px solid #fff;
+			&:hover 
+				background: none;
+				border-color: #fff;
+		.login-button
+			&:before 
+				width: 80%;
+			@extend .register-button
+		.termclick 
+			color: #fff; 
+			a 
+				color: $mainColor;
+				font-weight: 700;
+				text-shadow: 0 1px 1px #000;
+
+.joblist-section 
+	background: url(../images/joblist-bg.jpg) no-repeat bottom left fixed / cover;
+	min-height: 420px;
+	padding: 180px 0 50px; 
+	&:before 
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(56,56,56,0.65);
+		background: -moz-linear-gradient(top, rgba(56,56,56,0.65) 0%, rgba(19,19,19,0) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(56,56,56,0.65)), color-stop(100%, rgba(19,19,19,0)));
+		background: -webkit-linear-gradient(top, rgba(56,56,56,0.65) 0%, rgba(19,19,19,0) 100%);
+		background: -o-linear-gradient(top, rgba(56,56,56,0.65) 0%, rgba(19,19,19,0) 100%);
+		background: -ms-linear-gradient(top, rgba(56,56,56,0.65) 0%, rgba(19,19,19,0) 100%);
+		background: linear-gradient(to bottom, rgba(56,56,56,0.65) 0%, rgba(19,19,19,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#131313', GradientType=0 );
+	.usercp-headline
+		color: #fff;
+		position: relative;
+		z-index: 999;
+		span 
+			color: $mainColor;
+			text-shadow: 0 1px 1px #000;
+	.job-search
+		background: rgba(255,255,255,.5);
+		padding: 20px;
+	.filter-joblist
+		width: 100%;
+		min-height: 40px;
+		background: $mainColor;
+		border: none;
+		border-radius: 0;
+		box-shadow: 0 1px 2px rgba(0,0,0,.4);
+		font-weight: 500;
+		&:hover 
+			background: #c1b518
+.joblist-result
+	padding: 50px 0;
+	.joblist-result-headline
+		span 
+			color: $mainColor;
+			font-weight: 500;		
+.featured-list-jobs-item
+	&:hover
+		border-color: $mainColor;
+
+.pagination
+	li 
+		a 
+			margin: 0 2px;
+			color: $secondtextColor;
+			background: none;
+			border: 1px solid #fff;
+			font-size: 14px;
+			&:first-child, &:last-child 
+				border-radius: 0
+			&:hover 
+				box-shadow: none;
+				background: $mainColor;
+				border-color: $mainColor;
+				color: #fff;
+	.active 
+		a
+			color: #fff;
+			background: $mainColor;
+			border: 1px solid $mainColor;
+			&:hover 
+				color: #fff;
+				background: $mainColor;
+				border-color: $mainColor;
+
+.map 
+	padding: 0;
+	min-height: 420px;	
+	&:before 
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(38,38,38,0.31);
+		background: -moz-linear-gradient(top, rgba(38,38,38,0.31) 0%, rgba(84,84,84,0) 32%, rgba(181,181,181,0) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(38,38,38,0.31)), color-stop(32%, rgba(84,84,84,0)), color-stop(100%, rgba(181,181,181,0)));
+		background: -webkit-linear-gradient(top, rgba(38,38,38,0.31) 0%, rgba(84,84,84,0) 32%, rgba(181,181,181,0) 100%);
+		background: -o-linear-gradient(top, rgba(38,38,38,0.31) 0%, rgba(84,84,84,0) 32%, rgba(181,181,181,0) 100%);
+		background: -ms-linear-gradient(top, rgba(38,38,38,0.31) 0%, rgba(84,84,84,0) 32%, rgba(181,181,181,0) 100%);
+		background: linear-gradient(to bottom, rgba(38,38,38,0.31) 0%, rgba(84,84,84,0) 32%, rgba(181,181,181,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262626', endColorstr='#b5b5b5', GradientType=0 );
+		z-index: 9999;		
+
+.job-avatar-images
+	padding: 20px;
+	border: 4px solid #f6f6f6;
+	img 
+		width: 100%;
+
+.apply-button
+	background: $mainColor;
+	color: #fff 
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	box-shadow: none;
+	border-radius: 0;
+	border-color: $mainColor;
+	padding: 10px 40px;
+	position: relative;
+	display: block;
+	&:before 
+		content: "";
+		display: block;
+		position: absolute;
+		top: 6px;
+		left: 7px;
+		width: 90%;
+		height: 75%;
+		border: 1px solid #fff;
+	&:hover, &:focus, &:active, &:visited 
+		background: #fff;
+		color: $mainColor;
+		border-color: $mainColor;
+		&:before 
+			border-color: $mainColor;
+.job-detail-title
+	margin-bottom: 25px;			
+.job-status
+	padding: 15px 0;
+	border-bottom: 1px solid #d7d7d7;
+	ul 
+		padding: 0; 
+		margin: 0;
+		li 
+			font-size: 15px;
+			color: #999;
+			font-weight: 300;
+			a 
+				color: #999;
+				text-decoration: underline;
+				&:hover 
+					color: $mainColor;
+.job-detail-wrapper
+	margin-bottom: 20px;
+	.wrapper
+		margin-bottom: 20px;
+	.social
+		margin-bottom: 10px;
+.authorized-medal
+	color: #fff;
+	background: $mainColor;
+	padding: 2px 4px;
+.employer-avatar
+	.joblist-result-headline
+		font-size: 16px;
+	a 	
+		display: block;
+	img 
+		width: 100%;
+		border: 4px solid #f6f6f6;
+		&:hover 
+			border-color: $mainColor;
+	.authorized-medal
+		margin-top: 10px;
+		float: left;
+.usercp-cover
+	&:hover 
+		.usercp-change-cover
+			display: block;
+	.usercp-change-cover
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: $mainColor;
+		border: none;
+		box-shadow: none;
+		border-radius: 0;
+		color: #fff;
+		text-shadow: none;
+		display: none;
+		&:hover, &:active, &:focus, &:visited
+			background: $mainColor;
+			color: #fff;
+			border: none;
+.change-background
+	label > input
+		display:none;
+	label > input + img
+		cursor:pointer;
+		border:2px solid transparent;
+	label > input:checked + img
+		border:2px solid #fff;
+		box-shadow: 0 1px 1px #000;
+	.container 
+		max-width: 100%;
+	.change-background-item
+		margin-bottom: 15px;
+		min-height: 100px;
+		height: 100%;
+		overflow: hidden;
+		img 
+			width: 100%;
+.usercp-avatar
+	margin: 30px 0
+	img 
+		border-radius: 100%;
+		border: 4px solid #fff;
+	.usercp-name, .usercp-category
+		color: #fff;
+		text-shadow: 0 1px 2px #000;
+		text-transform: uppercase;
+		span 
+			font-weight: 400;
+	.usercp-category
+		font-size: 16px;
+		text-shadow: 0 2px 2px #000;
+	.changeAvatar
+		display: block;
+		max-width: 200px;
+		position: relative;
+		&:before 
+			display: block;
+			content: "Change the Avatar";
+			position: absolute;
+			top: 50%;
+			left: 10%;
+			width: 80%;
+			max-width: 200px;
+			color: #fff;
+			background: rgba(0,0,0,.5);
+		&:hover 
+			img 
+				-webkit-filter: grayscale(100%); 
+				filter: grayscale(100%);
+				transitionDelay(250ms)
+.mail-wrapper
+	color: #fff;
+	padding: 5px 15px;
+	height: 100%
+	h2
+		text-transform: uppercase;
+		font-size: 25px;
+	.mail-content
+		margin-top: 20px;
+		.empty-box
+			color: #d0d0d0;
+	.mail-block
+		h3
+			font-size: 18px;
+			text-transform: uppercase;
+			text-transform: 0 1px 1px #000;
+	.mail-item
+		margin: 10px 0;
+		display: block;
+		max-height: 190px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		a 
+			color: #c8c8c8;
+			&:hover 
+				color: $textColor;
+		.unread
+			color: #fff;
+			background: rgba(255,255,255,.3);
+			&:hover 
+				color: #fff;
+				background: rgba(255,255,255,.6);
+	.closeMailBox
+		color: #fff;
+		font-weight: 700;
+		text-transform: uppercase;
+		border: 1px solid #fff;
+		padding: 10px 25px;
+		background: none;
+		&:hover 
+			color: $textColor;
+			background: #999;
+	.modal 
+		color: $textColor;
+.attachment-file
+	margin-top: 15px;
+	img 
+		border: 4px solid #dedede;
+	a 
+		display: block;
+
+.employer-section 
+	background: url(../images/employer-cover.jpg) no-repeat center center fixed / cover;
+.employer-headline
+	color: #fff;
+	h1 
+		margin-top: 0;
+		text-shadow: 0 1px 1px #000;
+	p 
+		font-size: 15px;
+.person-item
+	img 
+		border-radius: 100%
+		border: 4px solid #f1f1f1;
+		transition: all 250ms linear 0s
+		&:hover 
+			border-radius: 0;
+			border-color: $mainColor;
+
+	i 
+		margin-right: 8px;
+		width: 15px;
+.person-wrapper 
+	margin: 20px 0;
+
+.person-list-wrapper
+	margin: 20px 0;		
+.person-desc
+	a 
+		color: $textColor;
+		font-weight: 600;		
+.person-item-name
+	margin: 15px 0 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 16px;
+	a 
+		color: $textColor;
+		&:hover 
+			color: $mainColor;
+.web-services
+	margin: 15px 0;
+	color: #d60404;
+	float: left
+	a 
+		color: #d60404;
+		font-weight: 600;
+.authorized-register
+	color: #d60404;
+	a 
+		color: #d60404;
+		font-weight: 600;
+	span 
+		color: #fff;
+		padding: 5px 15px;
+		background: $mainColor;
+.expired-job
+	background: #e7e7e7;
+.expired-text
+	color: #d60404!important;
+	font-weight: 600!important;
+.edit-post
+	color: #fff;
+	background: $mainColor;
+	padding: 2px 5px;
+	margin-top: 5px;
+	float: left;
+	border: 1px solid $mainColor;
+	&:hover
+		background: #fff;
+		color: $mainColor;
+		text-decoration: none;
+.create-new
+	text-transform: uppercase;
+	font-size: 18px;
+	@extend .edit-post
+
+.find-university
+	color: #fff;
+	text-shadow: 0 1px 2px #000;
+	p 
+		font-size: 15px;
+	.find-submit
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		color: $textColor;
+		background: none;
+		box-shadow: none;
+		border: none;
+		text-color: none;
+
+.browser-section
+	background: url(../images/browser-bg.jpg) no-repeat center center fixed / cover;
+
+.academy-detail
+	number 
+		color: #fff;
+		padding: 2px 3px;
+		background: $mainColor;
+		border-radius: 6px;

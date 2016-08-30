@@ -1,0 +1,472 @@
+@import 'variable.sass';
+@import 'mobile.sass';
+@import 'tablet.sass';
+@import 'desktop.sass';
+
+body 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $textColor;
+	width: 100%;
+	
+.header, .main, .footer, .copyright 
+	background: #fff;
+
+.promotion
+	background: url(../images/promo_bg-1.jpg) no-repeat center center;
+	height: 75px;
+	table
+		height: 100%
+		width: 100%
+		font-size: 1.2em;
+.top-bar
+	padding: 12px 0;
+	border-bottom: 1px solid #efefef;
+.social 
+	margin: 0
+	li 
+		display: inline;
+		margin-right: 11px;
+		a 
+			color: #aaa
+.main-bar
+	padding: 25px 0;	
+.category-list
+	height: 100%;
+	min-height: 422px;	
+	overflow: hidden;	
+	i 
+		margin-right: 10px;
+	.category-title		
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 1.2em;	
+		background: #efefef;
+		padding: 10px 25px;
+		font-weight: 600;
+		border: 1px solid #ececec;
+	.category-lists
+		border: 1px solid #ececec;
+		background: #fff;
+		img 
+			float: left;
+			margin-right: 10px;
+		a 
+			color: $textColor;
+			font-weight: 600;
+			text-transform: uppercase;
+			padding: 14px 25px;
+			&:hover 
+				color: $mainColor;
+.main-slider 
+	.banner-image
+		height: 100%;
+		min-height: 422px;
+		background-position: center center;	
+	.owl-controls
+		position: absolute;
+		bottom: 0;	
+		width: 100%;
+		text-align: center;
+	.owl-theme .owl-dots .owl-dot span
+		background: #fff;
+	.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+		background: $mainColor;
+
+.side-slider
+	a 
+		display: block;
+	.side-banner
+		height: 100%;
+		min-height: (422px-30)/2;
+		margin-bottom: 30px;
+		background-position: 50% 50%;
+		overflow: hidden;
+		&:hover 
+			background-size: 110%;
+			transition: all 500ms linear 0s;
+
+.promotion-item 
+	background: #f7f7f7;
+	padding: 20px 35px;
+	overflow: hidden;
+	vertical-align: middle;
+	font-size: 1.2em;
+	i 
+		float: left;
+		font-size: 250%;
+		color: $mainColor;
+		margin: 5px 25px 0 0;
+
+.section-list
+	margin: 30px 0
+	.section-title
+		margin-bottom: 15px;
+		img 
+			float: left;
+			margin-right: 20px;
+		a 
+			color: $textColor;
+			font-size: 2em;
+			&:hover 
+				text-decoration: none;
+				color: $mainColor;
+.product-detail
+	margin: 10px 0;
+	a 
+		font-size: 1.1em;
+		color: $textColor;
+		&:hover 
+			text-decoration: none;
+			color: $mainColor;
+	money
+		font-size: 1.2em;
+		font-weight: 700;
+.section-category-promotion
+	margin-top: 20px;
+	.promotion-category
+		height: 200px;
+		background-position: center center;
+		transition: all 250ms linear 0s;
+		overflow: hidden;
+		width: 100%;
+	.promotion-text
+		position: absolute
+		top: 20px;
+		left: 30px;
+		font-size: 1.5em;
+		text-align: center;
+		z-index: 99;
+		color: $mainColor;
+		font-weight: 600;
+		span 
+			color: $textColor;
+		&:hover 
+			text-decoration: none;
+.blog-desc
+	a
+		color: $textColor;			
+		font-weight: 600;
+		font-size: 1.5em;
+		&:hover 
+			color: $mainColor;
+			text-decoration: none;
+.footer-wrapper 
+	background: #f8f8f8;
+	padding: 60px 0px 15px;
+	border-top: 1px solid #ececec;
+	margin-top: 50px;
+	img 
+		margin-bottom: 20px;
+	.contact-list
+		li 
+			color: $textColor;
+			font-size: 1.1em;
+			margin: 10px 0;
+			float: left
+			width: 100%
+			i 
+				margin-right: 15px;
+				float: left;
+				font-size: 1.4em;
+				color: $mainColor;
+				width: 15px;
+				font-weight: 600;
+			span 
+				float: left
+				width: 100%-20;
+.footer-list
+	li 
+		a 
+			color: $textColor; 
+			&:hover 
+				color: $mainColor; 
+				background: none;
+.copyright
+	padding: 35px; 
+	border-top: 1px solid #ececec
+	a 
+		color: $mainColor;
+.breadcrumb-wrapper
+	color: #fff;
+	text-shadow: 0 1px 1px #000;	
+	background-size: cover;
+	background-position: center center;	
+	&:before 
+		content: "";
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(76,76,76,1);
+		background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(255,255,255,0) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(100%, rgba(255,255,255,0)));
+		background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(255,255,255,0) 100%);
+		background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(255,255,255,0) 100%);
+		background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(255,255,255,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#ffffff', GradientType=0 );
+	.breadcrumb, h1
+		background: none;
+		z-index: 999;
+		position: relative;
+	.active
+		color: #fff;	
+	a 
+		color: #fff;
+		text-shadow: none;	
+.category-wrapper
+	margin-bottom: 20px;
+.category-wrapper-list
+	margin-top: 20px;	
+	.product-single
+		margin-bottom: 20px;	
+.pagination-wrapper
+	border: 1px solid #e5e5e5;
+	padding: 10px 18px;	
+	.pagination
+		margin: 0;
+		li 
+			a 
+				color: $textColor;
+				border: none;
+				padding: 6px;
+				&:hover 
+					background: none;
+					color: $mainColor;
+					text-decoration: underline;
+		.active
+			a 
+				text-decoration: underline;
+				background: none;
+.product-navigation-item
+	img 
+		border: 1px solid transparent;
+		cursor: pointer
+		&:hover 
+			border-color: #ccc;
+.single-product-detail
+	money 
+		color: $mainColor;
+		font-weight: 700;
+		font-size: 1.5em;
+	.single-product-excerpt
+		text-align: justify;
+		margin: 15px 0;							
+	.single-product-name
+		font-size: 2.2em;
+		font-weight: 700;
+		margin: 0 0 20px;
+.quantity
+	position: relative;
+	width: 88px;
+	padding-right: 30px;
+	float: left;
+	.plus
+		border: 1px solid #ccc;
+		width: 30px;
+		height: 22px;
+		line-height: 18px;
+		position: absolute;
+		left: auto;
+		right: 0;
+		background: transparent;
+	.minus 
+		bottom: 0;
+		@extend .plus
+	.qty 
+		border: 1px solid #ccc;
+		height: 43px;
+		padding: 8px 0px;
+		line-height: 18px;
+		width: 100%;
+		display: inline-block;
+		margin: 0;
+		text-align: center;	
+.addtocart
+	float: left;
+	margin-left: 20px;
+	box-shadow: none;
+	text-shadow: none;
+	text-transform: uppercase;
+	background: none;
+	border: 2px solid #ccc;
+	color: $textColor;
+	border-radius: 0;
+	font-size: 1.6em;
+	padding: 6px 20px;
+	&:hover 
+		background: $mainColor;
+		border-color: $mainColor;
+		color: #fff;
+.single-product-social
+	.social 
+		padding: 25px 0 15px;
+		margin: 40px 0 15px;
+		border-top: 1px dotted #ececec;
+.posted-in 
+	line-height: 1.6em;
+	display: block;
+	border-top: 1px dotted #ececec;
+	padding: 12px 0;
+	font-size: 100%;		
+	a 
+		color: #888;
+		text-decoration: underline;
+.single-product-desc
+	margin: 30px 0 15px;		
+	.nav-tabs
+		li 
+			a 
+				color: #666;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-size: 1.3em;
+		.active
+			a 
+				color: $mainColor;
+.techical-info
+	padding: 20px 15px;	
+.related-procduct-header
+	font-weight: 600;
+	margin: 0 0 10px;				
+	text-transform: uppercase;	
+.featured-title
+	margin: 20px 0 15px;
+	font-weight: 600;
+	text-transform: uppercase;	
+.featured-product-single
+	.product-detail
+		margin-top: 0;
+	money
+		color: $mainColor;
+.featured-product-single
+	margin-bottom: 20px;
+.catgory-single-post
+	border-bottom: 1px solid #eee;
+	padding-bottom: 30px;	
+	&:last-child 
+		border: none;	
+.single-post-wrapper
+	.featured-single-post-images, .single-post-content
+		margin-bottom: 25px;
+	.single-post-title
+		font-size: 2em;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #eee;
+	.single-post-content
+		padding-top: 10px;
+		text-align: justify;
+.step-wrapper 
+	background: #fafafa;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 50px;
+	padding: 75px 0px;
+	.title-cart
+		opacity: .5;
+		h2 
+			margin: 0 10px 0;
+			float: left;
+			font-weight: 600;
+			font-size: 5em;
+			cursor: pointer;
+		a 
+			color: #454545
+			&:hover 
+				text-decoration: none;
+			h4 
+				text-transform: uppercase;
+		&:hover 
+			opacity: 1;
+	.current-title-cart
+		opacity: 1;
+		@extend .title-cart;
+.checkout-list
+	margin-bottom: 30px;
+	table 
+		border: 1px solid #eee;
+		th 
+			text-transform: uppercase;
+		td 
+			vertical-align: middle!important;
+			border: 1px solid #eee;
+		.close-checkout
+			border-radius: 100%;
+			border: 1px solid #eee;
+			padding: 2px 5px;
+			color: $textColor;
+		.checkout-product-name
+			color: $mainColor;
+	.shoppingCart_submit
+		background: none;
+		border-radius: 0;
+		box-shadow: none;
+		border: 2px solid #eee;
+		text-shadow: none;
+		text-transform: uppercase;
+		color: $textColor;
+		&:hover 
+			background: $mainColor;
+			color: #fff;
+			border-color: $mainColor;
+.checkout-info 
+	.form-control
+		border-radius: 0;
+		padding: 10px 15px;
+	label 
+		color: #4d4d4d;
+.checkout-wrapper
+	margin-bottom: 30px;		
+.checkout-detail
+	border: 5px solid #eee;
+	padding: 20px;
+	.checkout-detail-title
+		text-transform: uppercase;
+		color: $mainColor;
+	table 
+		border: 1px solid #eee;
+		th 
+			border: 1px solid #eee;
+		td 
+			vertical-align: middle!important;
+			border: 1px solid #eee;
+.checkout-info-submit-button
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	border: 2px solid #eee;
+	text-shadow: none;
+	text-transform: uppercase;
+	color: $textColor;
+	&:hover 
+		background: $mainColor;
+		color: #fff;
+		border-color: $mainColor;
+.checkout-complete
+	margin-bottom: 30px;
+	h1 
+		margin-bottom: 20px;
+	a 
+		background: $mainColor;
+		color: #fff;	
+		padding: 5px 20px;
+		text-transform: uppercase;
+		&:hover 	
+			text-decoration: none;
+.map
+	min-height: 400px;
+	height: 100%;
+	overflow: hidden;		
+	margin-bottom: 30px;
+.contact-form
+	margin-top: 30px;	
+.contact-promotion
+	font-size: .9em;
+	height: .9em*3*1.5;	
+	overflow: hidden;
+	text-overflow: ellipsis;

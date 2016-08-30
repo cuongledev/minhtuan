@@ -1,0 +1,483 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,vietnamese,latin-ext)
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=latin,vietnamese,latin-ext)
+@import 'variable.sass'
+@import 'responsive.sass'
+
+body 
+	font-family: Arial
+	font-size: 14px 
+	color: $textColor 
+	font-weight: 400
+	line-height: 2
+	background: #fff
+.hero-intro
+	margin-top: 17px
+hr 
+	margin: 0
+.top-navigation
+	ul 
+		li 
+			display: inline-block
+			a
+				&:hover, &:focus, &:active
+					background: none
+		.shopping-cart 
+			a
+				color: #fff 
+				border-radius: 5px
+				padding: 5px 11px
+				background: $mainColor
+				&:hover 
+					background: #AB1E17
+
+.main-navigation
+	border-top: 1px solid #eee
+.main-navigation-fixed 
+	position: fixed 
+	background: #fff 
+	box-shadow: 0 2px 2px #ccc
+	z-index: 1000
+.responsive-navbar
+	ul 
+		li, .active 
+			a 
+				font-family: 'Roboto Condensed', sans-serif;
+				font-weight: 700
+				font-size: 17px
+				&:hover, &:focus, &:active
+					background: none
+
+.navbar-brand-fixed 
+	max-width: 150px
+
+.brand-product-list
+	.brand-product-list-item
+		margin: 15px 0
+		.brand-product-list-item-wrapper					
+			border: 1px solid #fff 
+			border-radius: 10px
+.block 
+	h2 
+		font-size: 26px
+		text-transform: uppercase 
+		margin-bottom: 30px
+.product-list
+	.product-list-item
+		margin-bottom: 30px
+		.product-list-item-wrapper
+			border: 1px solid #fff
+			border-radius: 10px
+		.product-list-item-info
+			a 
+				color: $textColor
+				h3 
+					font-size: 15px
+.featured-news
+	background: #eee
+.featured-news-wrapper
+	.featured-news-item-wrapper				
+		border: 1px solid #fff
+		padding: 15px 
+		border-radius: 15px
+		margin: 15px 0
+
+.footer
+	background: #333637
+	.footer-wrapper
+		padding: 30px 0
+		.footer-col
+			margin: 15px 0
+			h3, a
+				color: #fff
+			h3 
+				font-size: 18px
+				margin-bottom: 25px
+			color: #aaa
+			.footer-col-wrapper
+				.footer-social
+					li 
+						display: inline-block 
+						margin-right: 10px
+						a 
+							border: 1px solid rgba(255,255,255,0.15)
+							border-radius: 5px
+							padding: 5px 15px
+							&:hover, &:focus, &:active 
+								background: none
+				.footer-category
+					li 
+						width: 49% 
+						display: inline-block
+						a 
+							&:hover, &:focus, &:active 
+								background: none
+.copyright
+	padding: 15px 0 
+	background: #282a2b
+	p 
+		margin: 0 
+		color: #aaa
+		span 
+			color: #fff		
+
+.breadcrumb
+	background: none 
+	border-bottom: 1px solid #E4E4E4
+	border-radius: 0
+	li 
+		a 
+			color: $textColor
+			font-size: 13px
+	.active 
+		a 
+			font-size: 13px
+.breadcrumb>li+li:before
+	content: ">"
+.sidebar-wrapper
+	.list-group
+		.badge
+			margin-top: 5px
+			background: #EB3127		
+	.list-group-item
+		border: none!important 
+		padding: 0!important 
+.product-content
+	.product-title
+		font-size: 24px
+
+.product-wrapper
+	.product-item
+		margin: 15px 0
+		.product-item-images
+			position: relative
+			margin-bottom: 10px
+			.product-status
+				position: absolute
+				bottom: 0
+				right: 0 
+				color: #fff 
+				padding: 2px 10px
+			img 
+				width: 100%
+		.product-item-title
+			a 
+				color: #222
+				h3 
+					white-space: nowrap
+					text-overflow: ellipsis
+					overflow: hidden
+					font-family: Arial
+					font-size: 14px
+					&:hover 
+						color: $mainColor
+.click-show-more
+	margin: 15px 0
+	a 
+		color: #fff		
+		background: $mainColor
+		border-radius: 10px
+		padding: 5px 15px	
+		border: 1px solid $mainColor
+		&:hover 
+			color: $mainColor
+			background: #fff
+.ajax-loadmore
+	padding: 15px 0		
+
+.sidebar-item
+	margin-bottom: 15px
+
+.sidebar-carousel
+	border: 3px solid #ccc 
+	box-shadow: 0 2px 2px #ccc 
+	border-radius: 5px
+	padding: 3px
+
+.product-filter
+	margin: 10px 0
+	.control-label
+		font-size: 14px 
+		font-weight: 400
+		margin-top: 3px
+		color: #909090
+	span 
+		margin-left: 10px
+		a 
+			color: $textColor
+			padding: 5px 8px
+			&:hover 
+				background: $mainColor
+				color: #fff
+				border-radius: 2px
+		.active 
+			background: $mainColor
+			color: #fff
+			border-radius: 2px
+.product-item-info	
+	height: 56px 
+	overflow: hidden
+.product-content-wrapper
+	margin: 15px 0
+.product-single-info
+	.product-single-title
+		font-size: 23px 
+		text-transform: uppercase
+		padding-bottom: 4px 
+		border-bottom: 1px solid #F3F3F3
+.product-single-info-wrapper
+	money
+		font-size: 22px 
+		font-family: Arial
+		margin: 15px 0
+	.shopping-cart-button
+		margin: 10px 0
+		background: $mainColor
+		color: #fff
+		text-shadow: none
+		text-transform: uppercase
+		font-family: Arial
+		font-size: 25px
+		transition: all 250ms linear 0s
+		&:hover 
+			background: red
+			transition: all 250ms linear 0s
+
+.share-social
+	margin-top: 20px
+				
+#product-gallery
+	border: 1px solid #ccc 
+	box-shadow: 0 2px 2px #ccc
+
+.product-single-infomation
+	margin: 20px 0
+	.nav-tabs
+		.active
+			background: $mainColor
+			a 
+				background: $mainColor
+				color: #fff
+				border: none
+		li 
+			border: none
+			a 
+				color: $textColor
+.product-single-infomation-content
+	padding: 20px 0
+.product-sapo-motherfuck
+	padding: 0!important
+#loader-add-product
+	color: #fff 
+	font-size: 50px 
+	background: rgba(0,0,0,.8)
+	position: fixed 
+	width: 100%
+	height: 100%
+	z-index: 10000
+	text-align: center 
+	padding-top: 20%
+
+.cart
+	padding-bottom: 30px
+
+.cart-infomation
+	button[type="submit"]
+		background: $mainColor
+		border: none 
+		box-shadow: none 
+		color: #fff 
+		text-transform: uppercase
+		font-weight: 600
+		margin: 15px auto
+		border-radius: 0
+		@include transitionDelay(250ms)
+		&:hover 
+			background: #9C110A
+			@include transitionDelay(250ms)
+.quit-cart
+	background: $mainColor
+	border: none 
+	box-shadow: none 
+	color: #fff 
+	text-transform: uppercase
+	font-weight: 600
+	margin: 15px auto
+	border-radius: 0
+	@include transitionDelay(250ms)
+	&:hover 
+		background: #9C110A
+		@include transitionDelay(250ms)
+.cart-tablet
+	.btn-number
+		background: $mainColor
+		color: #fff
+		text-shadow: none 
+		font-size: 12px
+.return-shopping
+	background: $mainColor
+	color: #fff 
+	padding: 5px 12px 
+	display: inline-block 
+	margin: 15px auto
+	@include transitionDelay(250ms)
+	&:hover 
+		color: #fff 
+		background: #9C110A
+		@include transitionDelay(250ms)
+.category-post-item
+	margin: 15px 0
+	padding-bottom: 20px 
+	border-bottom: 1px solid #ccc
+	a 
+		&:hover 
+			color: $mainColor
+	h2 
+		font-size: 22px
+	.category-description
+		padding-right: 120px
+		.category-readmore
+			position: absolute
+			right: 0
+			top: 0
+			background: $mainColor
+			padding: 5px 15px 
+			color: #fff
+			border-radius: 10px
+			&:hover 
+				background: #961E18
+.category-post-pagination
+	ul 
+		li 
+			a 
+				margin-left: 5px
+				background: #fff
+				border-color: #ccc
+				color: $textColor
+				border-radius: 5px
+				&:hover 
+					color: #fff 
+					background: $mainColor
+
+		.active
+			a 
+				background: $mainColor
+				color: #fff
+				border-color: $mainColor
+				&:hover
+					background: $mainColor
+					color: #fff
+					border-color: $mainColor
+.related-single-post
+	.category-post-item
+		border: none
+		a 
+			&:hover 
+				color: $mainColor
+.single-post-content
+	text-align: justify
+	img 
+		max-width: 90% 
+		margin: 0 auto					
+.bxslider
+	li 
+		img 
+			width: 100%
+.list-view-product-item
+	border-bottom: 1px solid rgba(234, 48, 39, 0.22)
+	padding-bottom: 30px
+	&:last-child 
+		border: none
+	.product-item-images
+		border: 1px solid #eee
+	.product-item-title
+		white-space: normal!important
+		text-overflow: clip!important
+		overflow: visible!important
+		h3
+			font-weight: bold 
+			font-size: 17px
+	.product-item-info
+		height: auto!important 
+		span 
+			margin-right: 5px
+			money 
+				color: $mainColor
+				font-weight: bold
+.product-carousel
+	border: 1px solid #eee
+	.item 
+		img 
+			margin: 0 auto
+			display: block
+.product-carousel-navigation
+	.item 
+		border: 1px solid #FAFAFA 
+		border-radius: 5px
+		img 
+			margin: 0 auto
+			display: block
+.slick-list
+	padding: 0!important
+.contact-info
+	margin: 15px 0
+.contact-images
+	margin: 15px auto
+
+.icon-branding
+	margin-right: 15px 
+	padding: 3px
+	margin-top: -5px
+
+.product-unsale
+	margin-left: 5px 
+	font-size: 12px
+
+.single-product-cost-sale
+	money 
+		font-size: 16px
+.dropdown-submenu 
+    position: relative
+
+.dropdown-submenu>.dropdown-menu
+	top: 0
+	left: 100%
+	margin-top: -6px
+	margin-left: -1px
+	box-shadow: none 
+	border-radius: 0!important
+
+.dropdown-submenu:hover>.dropdown-menu 
+    display: block
+
+.dropdown-submenu.pull-left 
+    float: none
+
+.dropdown-submenu.pull-left>.dropdown-menu 
+    left: -100%
+    margin-left: 10px
+    -webkit-border-radius: 6px 0 6px 6px
+    -moz-border-radius: 6px 0 6px 6px
+    border-radius: 6px 0 6px 6px
+
+.navbar-nav>li>.dropdown-menu
+	border-radius: 0!important
+	box-shadow: none
+
+.homeCarousel-navigation
+	position: absolute
+	z-index: 10;
+	display: block;
+	width: 100%
+	top: 40%
+	.navigation-next
+		position: relative
+		float: right
+		right: -35px
+	.navigation-prev
+		left: -35px
+		position: relative
+.map-container
+	img 
+		border-radius: 15px
+.product-code
+	margin: 0

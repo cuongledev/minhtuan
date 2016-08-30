@@ -1,0 +1,107 @@
+/* common css */
+.center { margin:0 auto; float:none; }
+#blog_index h1, #blog_index h2, #blog_index h3, #blog_index h4, #blog_index h5, #blog_index h6, #blog_index p, #blog_index a,
+#blog_header a { color:#000 !important; }
+a:hover { text-decoration: none; }
+#blog_index h1, #blog_index h2 { font-family: arial; font-weight: bold; }
+
+.noti-msg { padding:10px; border-radius: 5px; }
+/* end common css*/
+header { text-align: center; }
+header .branding{ float:left; width:100%; margin:50px auto 20px;}
+header #qdv_nav  { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin-top: 20px; margin-bottom: 80px; text-align: center;}
+header nav ul {}
+header nav ul li { display: inline-block !important; border-right: 1px solid #ccc; padding:5px; }
+header nav ul li:last-child { border-right: none; }
+header nav ul li a:hover { background: none !important;  }
+.wrapper_content { background: #FDFDFD; }
+#blog_content { border-right: 1px solid #ccc; margin-bottom: 50px;}
+#blog_sidebar {  }
+
+.post-roll article {border-top: 1px solid #ccc;  }
+.post-roll time, .post-roll .comment-count {padding:0 5px; border-right: 1px solid #ccc; font-size: 12px;}
+.article-feature h1 {font-size:20px;}
+.article-feature p {font-size:16px;}
+
+#post-roll article { overflow:hidden; padding: 20px 0; padding-bottom: 20px; }
+#post-roll article figure{ float:left; width:200px; margin-right:20px; }
+#post-roll article .post-content{ float:left; width:60%; }
+#post-roll article h2 { margin-top: 0; font-size: 18px; }
+#post-roll article p { font-family: "time news roman"; }
+#post-roll article .read-more { color:#f2ad00; font-size: 12px; }
+#post-roll article .read-more:hover { color:#ddd; }
+
+#blog_sidebar h3.widgettitle { font-size:14px; color:#474747; font-weight: bold; font-family: inherit; text-transform: uppercase; letter-spacing: 2px;}
+#blog_sidebar #search-2 h3.widgettitle { margin-top: 0; }
+#blog_sidebar ul li { list-style-type: square; color:#a3a3a3;margin-bottom:5px; }
+#blog_sidebar ul li a { font-size:14px; font-family: inherit; color:#a3a3a3;  }
+
+.next_post, .prev_post { background: #1C1C1C; color:#fff; padding:5px 10px; }
+.next_post:hover, .prev_post:hover{ color:#fff;text-decoration: none; }
+
+#blog_footer { margin-top: 50px; }
+#blog_footer p{ text-align: center; font-size: 14px; }
+
+#noti_search { padding:10px; border-radius: 5px; }
+
+/* news details */
+.news-details p{ margin-bottom:20px; font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; font-size:16px; line-height: 1.55; text-align:justify; }
+.news-details .author { color: #858585; line-height: 1.48; font-size: 12px; font-family: "Source Sans Pro", Helvetica, Arial, Verdana, Tahoma, sans-serif; }
+
+.news-like{ padding:20px 0 40px 0; border-bottom:1px solid #ccc; font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif;}
+.news-like h3 { font-weight: bold;}
+.news-like ul li { list-style-type:circle; margin-bottom: 10px; color:#f2ad00; }
+.news-like ul li a{ color:#f2ad00; }
+
+
+.cmt-item { margin-left: 40px; }
+.cmt-author { padding: 10px 0 20px; overflow: hidden; }
+.cmt-author img { margin-right: 10px; }
+.cmt-content { padding: 10px; border-radius: 5px; }
+.cmt-content p { font-size:14px; color: #858585; font-family: "Source Sans Pro", Helvetica, Arial, Verdana, Tahoma, sans-serif;}
+
+.comment h4 { padding:10px 5px; }
+
+/* hiring */ 
+.postjob { overflow: hidden; margin:100px auto 50px;}
+.postjob .pj-head { border-bottom: 2px solid #EDEDED; padding:30px 0; }
+.postjob .pj-content { margin:30px auto; }
+.postjob .pj-content h3 { padding:20px 0; }
+
+.apply-msg, #hr_profile, #postjob-list{  background: #fff; }
+#hr_msg .system-msg, #hr_msg .apply-msg{ border:1px solid #EDEDED; border-radius: 10px; padding:20px; margin-bottom:30px; }
+#postjob-list { border:1px solid #EDEDED; border-radius: 10px; padding:20px; margin-bottom:30px; }
+#hr_profile { border:1px solid #EDEDED; border-radius: 10px; padding:0 0 20px 20px; margin-bottom:30px;}
+#hr_profile .com-title h1 { font-size: 22px; line-height: 30px; }
+#hr_profile .info-head{ overflow:hidden; margin-bottom: 40px; }
+#hr_profile .info-head .com-logo { float:left; width:150px; }
+#hr_profile .info-head .com-logo img { width:100%; padding:10px 5%; border: 1px solid #EDEDED; }
+#hr_profile .info-body .info-item { padding-top:5px; padding-bottom:5px; font-size: 16px; }
+#hr_profile .info-body p { text-align: justify; }
+#hr_msg .system-msg { margin-bottom: 20px; }
+#hr_msg .system-msg h3, #hr_msg .apply-msg h3 { margin: 0 auto 30px; border-bottom: 1px solid #ccc; font-size: 20px; }
+#hr_msg .apply-msg ul li a{ color: #84878a; text-decoration: none;}
+#hr_msg .system-msg ul li a:hover{ background: none; }
+.cv-apply .modal-body .item div{ padding:10px; }
+
+#postjob-list h2 { padding-bottom:20px; text-align: center; }
+.pagi-listPJ { float:right; }
+
+.pj-view { padding:5px 10px; background: #2B8B3A; color:#fff; }
+.pj-edit { padding:5px 10px; background: #FFA81F; color:#fff; }
+a.pj-view:hover, a.pj-edit:hover, a.pj-lock:hover  { color:#fff; }
+
+.pj-lock { padding:5px 10px; background: #C13726; color:#fff; }
+.btn-edit-com-info { float:right; }
+
+.hr_profile_fix { padding:20px !important; }
+.hr_profile2 .info-head { margin-top: 20px; }
+.hr_profile2 .left-fix1 { color: #000;}
+.hr_profile_fix .info-body table td { vertical-align: middle; }
+
+.qdv_num_apply { float:right; }
+
+
+@media screen and ( max-width: 768px){
+	#post-roll article .post-content { width:100%;}
+}

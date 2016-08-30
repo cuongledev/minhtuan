@@ -1,0 +1,27 @@
+@mixin transitionDelay($time)
+	transition: all $time linear 0s
+// Color
+a
+	@include transitionDelay(250ms)
+	&:hover
+		@include transitionDelay(250ms)
+		text-decoration: none
+
+.noPadding 
+	padding: 0
+
+$mainColor: #EA3027
+
+$textColor: #333
+
+h1, h2, h3, h4, h5 
+	color: #222 
+	font-family: 'Roboto Condensed', sans-serif
+	margin-top: 0
+
+.fb-like-box, .fb-like-box span, .fb-like-box.fb_iframe_widget span iframe
+    width: 100% !important
+
+@media screen and (max-width: 768px)
+	.row 
+		margin: 0

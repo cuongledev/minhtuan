@@ -1,0 +1,16 @@
+a:hover {
+  text-decoration: none; }
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background: none; }
+
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
+  padding: 5px 15px; }
+
+.inner20 {
+  padding: 20px; }
+
+.no-margin-top {
+  margin-top: 0; }
+
+/*# sourceMappingURL=variable.css.map */

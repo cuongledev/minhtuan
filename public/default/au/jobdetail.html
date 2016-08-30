@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>After University</title>
+
+	<!-- Load CSS -->
+	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="lib/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="lib/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="lib/css/style.min.css">
+	<link rel="stylesheet" href="lib/css/custom.css">
+
+	<!-- Google Map -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+	<script type="text/javascript">
+		var myCenter=new google.maps.LatLng(20.974023,105.841200);
+		var marker;
+
+		function initialize()
+		{
+			var mapProp = {
+			  	center:myCenter,
+			  	zoom:15,
+			  	mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+
+			var map=new google.maps.Map(document.getElementById("map"),mapProp);
+
+			var marker=new google.maps.Marker({
+			  	position:myCenter,
+			  	animation:google.maps.Animation.BOUNCE
+			});
+
+			marker.setMap(map);
+
+			var infowindow = new google.maps.InfoWindow({
+			  	content:"<b>3S Ltd Company</b>"
+		  	});
+
+			infowindow.open(map,marker);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	
+</head>
+<body>
+	<!-- Facebook API -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=927362164006956";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<header class="header col-xs-12" id="header">
+		<nav class="navbar navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".responsive-navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="lib/images/logo.png" alt="" class="img-responsive"></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse responsive-navbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">For Students</a></li>
+						<li><a href="#">For Employers</a></li>
+						<li><a href="#">Academy</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About us</a></li>
+						<li class="login-icon dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="lib/images/login-icon.svg" alt="" class="img-responsive"></a>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+								<li><a href="#"><i class="fa fa-key" aria-hidden="true"></i> Register</a></li>
+							</ul>
+						</li>
+						<li class="language-sw"><a href="#"><img src="lib/images/flag-en.jpg" alt="" class="img-responsive"></a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+
+	<div class="map col-xs-12" id="map"></div>
+
+	<section class="joblist-result col-xs-12">
+		<div class="container">
+			<div class="job-detail-wrapper col-xs-12 noPadding">
+				<button class="btn btn-default center-block apply-button" data-toggle="modal" href="#apply">Apply</button>
+				<div class="modal fade" id="apply">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Apply</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="job-detail-title text-justify">PHP Developer</h1>
+				<div class="social col-xs-12 noPadding">
+					<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+				</div>
+				<span class="authorized-medal">posted by authorized employer</span>
+				<div class="wrapper col-xs-12 noPadding">
+					<div class="job-status col-xs-12 noPadding">
+						<ul>
+							<li><i class="fa fa-money" aria-hidden="true"></i> Salary: <a href=""><b>8.000.000 - 15.000.000</b></a></li>
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i> Location: <a href=""><b>Ho Chi Minh City</b></a></li>
+							<li><i class="fa fa-bars" aria-hidden="true"></i> Category: <a href=""><b>IT - Software</b></a></li>
+							<li><i class="fa fa-calendar" aria-hidden="true"></i> Expired Date: <b>20-06-2016</b></li>
+						</ul>
+					</div>
+					<div class="job-detail-item job-description col-xs-12 noPadding">
+						<h3>Job Description</h3>
+						<div class="job-detail-item-text col-xs-12 noPadding text-justify">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptates mollitia soluta at obcaecati magni doloremque aperiam, quisquam, esse ipsa voluptas commodi quis nulla dolore atque cumque incidunt similique porro.<br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, id ad sed pariatur provident sit praesentium nobis laudantium, illum, quisquam quaerat accusantium odio tempora odit in eius error enim voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptatibus deleniti vitae ea optio? Odit, maiores delectus doloremque provident magnam. A quae eligendi, id ut provident? Vero optio odio et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quod eos numquam sunt harum laudantium labore maxime architecto dolores laboriosam eveniet tempore et quis, autem velit officiis. Similique, ea, numquam!<br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quae impedit est illum alias temporibus asperiores qui velit voluptates maiores doloremque mollitia, nobis! Voluptatem consequuntur maiores saepe, cupiditate. Sequi, laboriosam?
+						</div>
+					</div>
+
+					<div class="job-detail-item job-description col-xs-12 noPadding">
+						<h3>Work Benefit</h3>
+						<div class="job-detail-item-text col-xs-12 noPadding text-justify">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, doloribus aliquid. Velit et ipsa explicabo eos excepturi optio voluptatem recusandae, repellat incidunt ea blanditiis doloribus consequatur error corrupti consequuntur enim!<br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ea debitis sed natus, eius odit eveniet consequuntur sint sunt velit tenetur error, ratione cumque incidunt deleniti, neque architecto. Libero, voluptas!<br>
+						</div>
+					</div>
+
+					<div class="job-detail-item job-description col-xs-12 noPadding">
+						<h3>Job Requirement</h3>
+						<div class="job-detail-item-text col-xs-12 noPadding text-justify">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, doloribus aliquid. Velit et ipsa explicabo eos excepturi optio voluptatem recusandae, repellat incidunt ea blanditiis doloribus consequatur error corrupti consequuntur enim!<br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ea debitis sed natus, eius odit eveniet consequuntur sint sunt velit tenetur error, ratione cumque incidunt deleniti, neque architecto. Libero, voluptas!<br>
+						</div>
+					</div>
+
+					<div class="job-detail-item job-description col-xs-12 noPadding">
+						<h3>Files Requirement</h3>
+						<div class="job-detail-item-text col-xs-12 noPadding text-justify">
+							No require !
+						</div>
+					</div>
+
+					<div class="job-detail-item job-description col-xs-12 noPadding">
+						<h3>Extra Fields</h3>
+						<div class="job-detail-item-text col-xs-12 noPadding text-justify">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam culpa officia modi aliquid commodi, aspernatur excepturi ipsam et rerum! Quaerat fugit, molestias adipisci nesciunt ipsam cum vel repudiandae architecto iusto.
+						</div>
+					</div>
+				</div>
+				<button class="btn btn-default center-block apply-button" data-toggle="modal" href="#apply">Apply</button>
+			</div>
+			
+			<!-- About Employer -->
+			<div class="joblist-result-wrapper col-xs-12 noPadding">
+				<div class="work-list-wrapper col-xs-12 noPadding">
+					<div class="row">
+						<div class="work-wrapper col-xs-12">
+							<div class="work-item col-xs-12 noPadding">
+								<div class="col-xs-2 employer-avatar noPadding">
+									<p class="joblist-result-headline">About the <span>Employer</span></p>
+									<a href=""><img src="lib/images/example-logo.png" alt="" class="img-responsive"></a>
+									<span class="authorized-medal">Authorized Employer</span>
+								</div>
+								<div class="col-xs-10 work-item-detail">
+									<p class="work-item-title"><a href="">FPT Software</a></p>
+									<div class="employer-detail">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptas impedit, aut nostrum amet magnam, blanditiis est possimus iure, ipsum eligendi ut omnis laboriosam inventore quibusdam aliquam quo. Cum, fuga.<br>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde at est, dolor quibusdam odit iure esse repellat, sit nobis dolore fugit voluptate libero necessitatibus pariatur neque. Ipsum quasi, reiciendis at.<br>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptas impedit, aut nostrum amet magnam, blanditiis est possimus iure, ipsum eligendi ut omnis laboriosam inventore quibusdam aliquam quo. Cum, fuga.<br>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde at est, dolor quibusdam odit iure esse repellat, sit nobis dolore fugit voluptate libero necessitatibus pariatur neque. Ipsum quasi, reiciendis at.<br>
+									</div>
+								</div>
+							</div><!-- ./work-item -->
+						</div><!-- /.work-wrapper -->
+					</div>
+				</div><!-- /.featured-work-wrapper -->
+			</div>
+
+			<!-- Feature Job -->
+			<div class="joblist-result-wrapper col-xs-12 noPadding">
+				<h3 class="joblist-result-headline"><i class="fa fa-star-o" aria-hidden="true"></i> <span>Featured </span>Jobs</h3>
+				<div class="work-list-wrapper col-xs-12 noPadding">
+					<div class="row">
+						<div id="featured-jobslist" class="featured-jobslist">
+							<div class="work-wrapper col-xs-12">
+								<div class="work-item featured-list-jobs-item col-xs-12 noPadding">
+									<div class="col-xs-12 noPadding work-item-detail">
+										<p class="work-item-title"><a href="">PHP Developer</a></p>
+										<div class="work-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere ad culpa, laudantium numquam nam rem debitis...</div>
+										<span><i class="fa fa-map-marker" aria-hidden="true"></i> Location: <a href="">Ho Chi Minh City</a></span><br>
+										<span>Salary: <b><a href="">8.000.000 - 15.000.000</a></b></span>
+									</div>
+								</div><!-- ./work-item -->
+							</div><!-- /.work-wrapper -->
+							<div class="work-wrapper col-xs-12">
+								<div class="work-item featured-list-jobs-item col-xs-12 noPadding">
+									<div class="col-xs-12 noPadding work-item-detail">
+										<p class="work-item-title"><a href="">PHP Developer</a></p>
+										<div class="work-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere ad culpa, laudantium numquam nam rem debitis...</div>
+										<span><i class="fa fa-map-marker" aria-hidden="true"></i> Location: <a href="">Ho Chi Minh City</a></span><br>
+										<span>Salary: <b><a href="">8.000.000 - 15.000.000</a></b></span>
+									</div>
+								</div><!-- ./work-item -->
+							</div><!-- /.work-wrapper -->
+							<div class="work-wrapper col-xs-12">
+								<div class="work-item featured-list-jobs-item col-xs-12 noPadding">
+									<div class="col-xs-12 noPadding work-item-detail">
+										<p class="work-item-title"><a href="">PHP Developer</a></p>
+										<div class="work-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere ad culpa, laudantium numquam nam rem debitis...</div>
+										<span><i class="fa fa-map-marker" aria-hidden="true"></i> Location: <a href="">Ho Chi Minh City</a></span><br>
+										<span>Salary: <b><a href="">8.000.000 - 15.000.000</a></b></span>
+									</div>
+								</div><!-- ./work-item -->
+							</div><!-- /.work-wrapper -->
+							<div class="work-wrapper col-xs-12">
+								<div class="work-item featured-list-jobs-item col-xs-12 noPadding">
+									<div class="col-xs-12 noPadding work-item-detail">
+										<p class="work-item-title"><a href="">PHP Developer</a></p>
+										<div class="work-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere ad culpa, laudantium numquam nam rem debitis...</div>
+										<span><i class="fa fa-map-marker" aria-hidden="true"></i> Location: <a href="">Ho Chi Minh City</a></span><br>
+										<span>Salary: <b><a href="">8.000.000 - 15.000.000</a></b></span>
+									</div>
+								</div><!-- ./work-item -->
+							</div><!-- /.work-wrapper -->
+							<div class="work-wrapper col-xs-12">
+								<div class="work-item featured-list-jobs-item col-xs-12 noPadding">
+									<div class="col-xs-12 noPadding work-item-detail">
+										<p class="work-item-title"><a href="">PHP Developer</a></p>
+										<div class="work-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere ad culpa, laudantium numquam nam rem debitis...</div>
+										<span><i class="fa fa-map-marker" aria-hidden="true"></i> Location: <a href="">Ho Chi Minh City</a></span><br>
+										<span>Salary: <b><a href="">8.000.000 - 15.000.000</a></b></span>
+									</div>
+								</div><!-- ./work-item -->
+							</div><!-- /.work-wrapper -->
+							<div class="work-wrapper col-xs-12">
+								<div class="work-item featured-list-jobs-item col-xs-12 noPadding">
+									<div class="col-xs-12 noPadding work-item-detail">
+										<p class="work-item-title"><a href="">PHP Developer</a></p>
+										<div class="work-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere ad culpa, laudantium numquam nam rem debitis...</div>
+										<span><i class="fa fa-map-marker" aria-hidden="true"></i> Location: <a href="">Ho Chi Minh City</a></span><br>
+										<span>Salary: <b><a href="">8.000.000 - 15.000.000</a></b></span>
+									</div>
+								</div><!-- ./work-item -->
+							</div><!-- /.work-wrapper -->
+						</div>
+					</div>
+				</div><!-- /.featured-work-wrapper -->
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer col-xs-12" id="footer">
+		<div class="container">
+			<div class="footer-wrapper col-xs-12">
+				<div class="row">
+					<div class="footer-col col-xs-12 col-sm-6 col-md-3">
+						<p class="footer-headline">AfterUniversity</p>
+						<ul class="footer-list nav">
+							<li><a href="">About us</a></li>
+							<li><a href="">Academy</a></li>
+							<li><a href="">FAQ</a></li>
+						</ul>
+					</div><!-- /.footer-col -->
+					<div class="footer-col col-xs-12 col-sm-6 col-md-3">
+						<p class="footer-headline">For Students</p>
+						<ul class="footer-list nav">
+							<li><a href="">Create Profile</a></li>
+							<li><a href="">Find Jobs</a></li>
+						</ul>
+					</div><!-- /.footer-col -->
+					<div class="footer-col col-xs-12 col-sm-6 col-md-3">
+						<p class="footer-headline">For Employer</p>
+						<ul class="footer-list nav">
+							<li><a href="">Authorized Employer</a></li>
+							<li><a href="">Find Staff</a></li>
+						</ul>
+					</div><!-- /.footer-col -->
+					<div class="footer-col col-xs-12 col-sm-6 col-md-3">
+						<p class="footer-headline">Our Network</p>
+						<ul class="footer-list nav social-network">
+							<li class="facebook"><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li class="googleplus"><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						</ul>
+					</div><!-- /.footer-col -->
+				</div>
+			</div>
+			<div class="copyright col-xs-12">
+				<div class="row">
+					<div class="owner col-xs-12 col-md-6">
+						<p>Owner: 3S Join Stock Company</p>
+						<p>Address: 11/215/143 Nguyen Chinh - Hoang Mai - Ha Noi - Viet Nam</p>
+						<p>License Number: 0123456789 - 16/06/2015</p>
+						<p>At the Department of Planning and Investment of Ha Noi City</p>
+					</div>
+					<div class="owner col-xs-12 col-md-6">
+						<ul class="owner-list">
+							<li><a href="">Privacy Policy</a></li>
+							<li><a href="">Terms and Conditions</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="register col-xs-12 text-center">
+				Copyright © 2016 <b>After University</b> a product of <b>3S Join Stock Company</b>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#header" id="toTop" class="hidden-xs hidden-sm totop"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+	
+  	<!-- Load JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="lib/js/script.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,52 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&subset=latin-ext,vietnamese';
+@import 'https://fonts.googleapis.com/css?family=Coiny&subset=latin-ext,vietnamese';
+
+// Color
+$textColor: #2b2b2b;
+$red: #ea2e0d;
+$grey: #7e7e7e;
+$blue: #115b96;
+
+//Trasition 
+@mixin transitionDelay($time)
+	transition: all $time linear 0s
+
+a, a:hover
+	transitionDelay(500ms)
+	text-decoration: none;
+
+.navbar-brand
+	display: block;
+	height: auto!important;
+nav 
+	margin: 0!important;
+	height: auto!important;
+
+.blue-button
+	background: $blue;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+
+.noPadding 
+	padding: 0;
+
+.responsive-navbar 
+	li 
+		a 
+			&:hover, &:focus, &:visited, &:active 
+				background: none;
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+	background: none;
+
+@keyframes toBottomFromTop
+	49% 
+		transform: translateY(100%);
+	50% 
+		opacity: 0;
+		transform: translateY(-100%);
+	51% 
+		opacity: 1;
+
+

@@ -1,0 +1,156 @@
+@media screen and (min-width: 992px)
+	.navbar
+		height: 95px;
+	.navbar-brand
+		padding: 0
+		img
+			max-width: 200px;
+			margin-top: 10px;
+	.login-icon
+		a 
+			padding-top: 10px!important;
+	.language-sw
+		a 
+			padding-top: 18px!important;
+	.hero-section
+		min-height: 640px 
+		height: 100%
+		padding: 300px 0
+		background: url(../images/hero-images.jpg) top left no-repeat fixed / cover
+	.navbar-nav
+		margin-top: 20px;
+	.cta-section
+		.cta-section-button
+			margin-top: 40px;
+	.navOverflow
+		background: rgba(0,0,0,.5);
+	.featured-work-wrapper
+		margin: 40px 0 20px;
+	.dropdown-menu
+		border-radius: 0;
+		padding: 0
+		li
+			a
+				color: $textColor!important;
+				padding: 10px;
+				&:hover 
+					background: $mainColor;
+					color: #fff!important;
+	.responsive-navbar 
+		ul>li>a 
+			color: #fff;
+	.job-status
+		ul 
+			li 
+				display: inline-block;
+				margin-right: 25px;	
+	.quick-cta-button
+		position: fixed 
+		top: 50%
+		right: 2%
+		.quick-cta-circle
+			position: absolute 
+			width: 70px
+			height: 70px
+			background: none 
+			border:1px solid #bfebfc
+			border-radius: 100%
+			top: 0
+			right: 0
+			animation: largest 1.2s infinite ease-in-out
+			@keyframes largest 
+				0% 
+					transform:rotate(0) scale(1.4) skew(1deg)
+					opacity:.3
+				30%
+					transform:rotate(0) scale(1.8) skew(1deg)
+					opacity:.5
+				50%
+					transform:rotate(0) scale(2.2) skew(1deg)
+					opacity:.7
+				70%
+					transform:rotate(0) scale(1.8) skew(1deg)
+					opacity:.5
+				100% 
+					transform:rotate(0) scale(1.4) skew(1deg)
+					opacity:.3
+		.quick-cta-circle-fill
+			position: absolute 
+			width: 70px 
+			height: 70px 
+			background: #00aff2
+			opacity:.75 
+			border-radius: 100%
+			top: 0
+			right: 0
+			transform-origin: 50% 50%
+			animation: larger 1.8s infinite ease-in-out
+			@keyframes larger 
+				0%
+					transform:rotate(0) scale(1) skew(1deg)
+					opacity:.1
+				30%
+					transform:rotate(0) scale(1.2) skew(1deg)
+					opacity:.3
+				50%
+					transform:rotate(0) scale(1.4) skew(1deg)
+					opacity:.5
+				70%
+					transform:rotate(0) scale(1.2) skew(1deg)
+					opacity:.3
+				100%
+					transform:rotate(0) scale(1) skew(1deg)
+					opacity:.1
+		.quick-cta-image
+			background: #0345a6;
+			width: 70px
+			height: 70px
+			padding: 13px 19px 
+			border-radius: 100%
+			font-size: 2.2em
+			opacity: .7 
+			border: 2px solid transparent
+			transform-origin: 50% 50%
+			animation: ring 1s infinite ease-in-out
+			@keyframes ring
+				0% 
+					transform:rotate(0) scale(1) skew(1deg)
+				10%
+					transform:rotate(-25deg) scale(1) skew(1deg)			
+				20%
+					transform:rotate(25deg) scale(1) skew(1deg)
+				30%
+					transform:rotate(-25deg) scale(1) skew(1deg)
+				40%
+					transform:rotate(25deg) scale(1) skew(1deg)
+				50%
+					transform: rotate(0) scale(1) skew(1deg)
+				100%
+					transform: rotate(0) scale(1) skew(1deg)
+				
+			a
+				color: #fff;
+
+	.mail-section
+		position: fixed;
+		right: 0;
+		top: 0;
+		height: 100%;
+		max-width: 350px;
+		width: 100%;
+		background: #223c41;
+		display: block;
+		z-index: 99999;
+
+	.person-wrapper
+		width: 20%;
+	.person-item-name
+		height: 24px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	.academy-detail
+		.academy-name
+			max-height: 44px!important;
+		.academy-address
+			max-height: 38px!important;
