@@ -20,7 +20,7 @@
 					<a href="<?php echo base_url();?>"><img src="<?php if(isset($info['logo'])) echo base_url().$info['logo']; ?>" alt="" class="img-responsive center-block"></a>
 				</div>
 
-				<div class="hidden-xs hidden-sm col-md-4 search-form">
+				<div class="hidden-xs hidden-sm col-md-6 search-form">
 				  <form action="<?php echo base_url().'tim-kiem.htm'; ?>" method="GET" role="form">
 
 						<div class="form-group">
@@ -41,20 +41,29 @@
 			                </div>
 
 			            </div>
+			            <div class="form-group phone-hotline-top">
+			            	<p><span><i class="fa fa-phone fa-3" aria-hidden="true"></i>
+			            	<?php 
+			            	echo (isset($info['phone'])) ? $info['phone'] : '';
+			            	 ?>
+							</span>
+			            	Hỗ trợ khách hàng từ 7h đến 21h hàng ngày</p>
+			            </div>
 
 				  </form>
 				</div>
 
 
-				<div class="col-xs-3 col-xs-push-3 col-md-4 col-md-push-0 text-right shopping-cart shopping_cart_lnc">
-					<a href="<?php echo base_url().'product/showCart'; ?>"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-					<?php 
+				<div class="col-xs-3 col-md-2 text-right shopping-cart shopping_cart_lnc">
+					<a href="<?php echo base_url().'product/showCart'; ?>">
+					<img src="<?php echo base_url().'public/default/images/icon-cart.png' ?>" alt="">
+					GIỎ HÀNG (<?php 
 						echo $this->cart->total_items();
-					?>
-					item(s) <money class="hidden-xs"> - <?php echo number_format($this->cart->total(),0,'','.');?> &#8363;</money></a>
+					?>)
+					 <?php //echo number_format($this->cart->total(),0,'','.');?></a>
 				</div>
 			</div><!-- /.main-bar -->
-			<div class="col-md-12 noPadding text-center">
+			<div class="col-md-12 noPadding">
 				<nav class="navbar" role="navigation">
 					<div class="container-fluid noPadding">
 						<!-- Brand and toggle get grouped for better mobile display -->

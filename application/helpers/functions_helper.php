@@ -344,7 +344,7 @@ function dequyUl($data,$parent=0){
 function dequyUlxxx($data,$parent=0){
     if (isset($data[$parent])) {
         if ($parent==0) {
-            echo "<ul class='main-navigation text-center'>";
+            echo "<ul class='main-navigation'>";
         }else{
             echo "<ul class='dropdown-menu'>";
         }
